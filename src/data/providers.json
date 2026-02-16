@@ -1,0 +1,256 @@
+[
+  {
+    "id": "groq",
+    "name": "Groq",
+    "url": "https://console.groq.com/docs/rate-limits",
+    "type": "Free",
+    "limits": "Rate limits apply at the organization level. The limits shown below are the base limits for the Developer plan, and higher limits are available for select workloads and enterprise use cases. Free Plan Limits are displayed.",
+    "models": [
+      {
+        "name": "allam-2-7b",
+        "rpm": 30,
+        "rpd": 7000,
+        "tpm": 6000,
+        "tpd": 500000
+      },
+      {
+        "name": "canopylabs/orpheus-arabic-saudi",
+        "rpm": 10,
+        "rpd": 100,
+        "tpm": 1200,
+        "tpd": 3600
+      },
+      {
+        "name": "canopylabs/orpheus-v1-english",
+        "rpm": 10,
+        "rpd": 100,
+        "tpm": 1200,
+        "tpd": 3600
+      },
+      {
+        "name": "groq/compound",
+        "rpm": 30,
+        "rpd": 250,
+        "tpd": 70000
+      },
+      {
+        "name": "groq/compound-mini",
+        "rpm": 30,
+        "rpd": 250,
+        "tpd": 70000
+      },
+      {
+        "name": "llama-3.1-8b-instant",
+        "rpm": 30,
+        "rpd": 14400,
+        "tpm": 6000,
+        "tpd": 500000
+      },
+      {
+        "name": "llama-3.3-70b-versatile",
+        "rpm": 30,
+        "rpd": 1000,
+        "tpm": 12000,
+        "tpd": 100000
+      },
+      {
+        "name": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "rpm": 30,
+        "rpd": 1000,
+        "tpm": 6000,
+        "tpd": 500000
+      },
+      {
+        "name": "meta-llama/llama-4-scout-17b-16e-instruct",
+        "rpm": 30,
+        "rpd": 1000,
+        "tpm": 30000,
+        "tpd": 500000
+      },
+      {
+        "name": "meta-llama/llama-guard-4-12b",
+        "rpm": 30,
+        "rpd": 14400,
+        "tpm": 15000,
+        "tpd": 500000
+      },
+      {
+        "name": "meta-llama/llama-prompt-guard-2-22m",
+        "rpm": 30,
+        "rpd": 14400,
+        "tpm": 15000,
+        "tpd": 500000
+      },
+      {
+        "name": "meta-llama/llama-prompt-guard-2-86m",
+        "rpm": 30,
+        "rpd": 14400,
+        "tpm": 15000,
+        "tpd": 500000
+      },
+      {
+        "name": "moonshotai/kimi-k2-instruct",
+        "rpm": 60,
+        "rpd": 1000,
+        "tpm": 10000,
+        "tpd": 300000
+      },
+      {
+        "name": "moonshotai/kimi-k2-instruct-0905",
+        "rpm": 60,
+        "rpd": 1000,
+        "tpm": 10000,
+        "tpd": 300000
+      },
+      {
+        "name": "openai/gpt-oss-120b",
+        "rpm": 30,
+        "rpd": 1000,
+        "tpm": 8000,
+        "tpd": 200000
+      },
+      {
+        "name": "openai/gpt-oss-20b",
+        "rpm": 30,
+        "rpd": 1000,
+        "tpm": 8000,
+        "tpd": 200000
+      },
+      {
+        "name": "openai/gpt-oss-safeguard-20b",
+        "rpm": 30,
+        "rpd": 1000,
+        "tpm": 8000,
+        "tpd": 200000
+      },
+      {
+        "name": "qwen/qwen3-32b",
+        "rpm": 60,
+        "rpd": 1000,
+        "tpm": 6000,
+        "tpd": 500000
+      },
+      {
+        "name": "whisper-large-v3",
+        "rpm": 20,
+        "rpd": 2000,
+        "ash": 7200,
+        "asd": 28800
+      },
+      {
+        "name": "whisper-large-v3-turbo",
+        "rpm": 20,
+        "rpd": 2000,
+        "ash": 7200,
+        "asd": 28800
+      }
+    ]
+  },
+  {
+    "id": "openrouter",
+    "name": "OpenRouter",
+    "url": "https://openrouter.ai/docs/limits",
+    "type": "Free",
+    "limits": "20 requests per minute for free tier models. Daily limits vary based on credit purchase: 50 requests/day for users with < 10 credits, 1000 requests/day for users with >= 10 credits.",
+    "models": [
+      {
+        "name": ": free",
+        "rpm": 20,
+        "tpm": 20
+      }
+    ]
+  },
+  {
+    "id": "cerebras",
+    "name": "Cerebras",
+    "url": "https://cerebras.ai/pricing",
+    "type": "Free",
+    "limits": "Generous free tier with per-model limits for Requests (RPM/RPH/RPD) and Tokens (TPM/TPH/TPD).",
+    "models": [
+      {
+        "name": "gpt-oss-120b",
+        "rpm": 30,
+        "rpd": 14400,
+        "tpm": 64000,
+        "tpd": 1000000
+      },
+      {
+        "name": "llama3.1-8b",
+        "rpm": 30,
+        "rpd": 14400,
+        "tpm": 60000,
+        "tpd": 1000000
+      }
+    ]
+  },
+  {
+    "id": "hugging-face",
+    "name": "Hugging Face",
+    "url": "https://huggingface.co/docs/api-inference/index#rate-limits",
+    "type": "Free",
+    "limits": "Generous free tier with additional credits for PRO users and Team & Enterprise organizations.",
+    "models": [
+      {
+        "name": "openai/gpt-oss-120b",
+        "tpm": 1.23
+      },
+      {
+        "name": "black-forest-labs/FLUX.1-dev",
+        "tpm": 1.23
+      },
+      {
+        "name": "deepseek-ai/DeepSeek-R1",
+        "tpm": 1.23
+      }
+    ]
+  },
+  {
+    "id": "mistral-ai",
+    "name": "Mistral AI",
+    "url": "https://mistral.ai/technology/#pricing",
+    "type": "Free",
+    "limits": "Mistral AI Studio offers a free tier for exploration and development, with specific limits on model usage. Details are not explicitly provided in the documentation for the free tier, but the platform emphasizes building and testing capabilities. Pricing details for higher tiers and enterprise solutions are available separately.",
+    "models": [
+      {
+        "name": "Mistral Large 3",
+        "tpm": 1000,
+        "tpd": 100000
+      },
+      {
+        "name": "Mistral Medium 3",
+        "tpm": 500,
+        "tpd": 50000
+      },
+      {
+        "name": "Mistral Small 3",
+        "tpm": 250,
+        "tpd": 25000
+      }
+    ]
+  },
+  {
+    "id": "nvidia-nim",
+    "name": "Nvidia NIM",
+    "url": "https://build.nvidia.com/explore",
+    "type": "Free",
+    "limits": "NVIDIA NIM offers free serverless APIs for development, with specific limits detailed per model.",
+    "models": [
+      {
+        "name": "nvidia/nemotron-3-nano-30b-a3b",
+        "tpm": 1000000
+      },
+      {
+        "name": "nvidia/nemotron-nano-12b-v2-vl",
+        "tpm": 1000000
+      },
+      {
+        "name": "openai/gpt-oss-20b",
+        "tpm": 1000000
+      },
+      {
+        "name": "qwen/qwen3-next-80b-a3b-thinking",
+        "tpm": 1000000
+      }
+    ]
+  }
+]
