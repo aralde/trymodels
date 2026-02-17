@@ -260,102 +260,194 @@
   },
   {
     "name": "Groq",
-    "url": "https://console.groq.com",
-    "limits": "N/A",
+    "url": "https://console.groq.com/docs/rate-limits",
+    "limits": "The free tier limits are listed per model in the table below. Higher limits are available on the Developer plan.",
     "models": [
       {
-        "name": "Allam 2 7B",
-        "tpm": 6000,
-        "tpd": 7000
+        "model_id": "allam-2-7b",
+        "limits": {
+          "RPM": "30",
+          "RPD": "7K",
+          "TPM": "6K",
+          "TPD": "500K"
+        }
       },
       {
-        "name": "Llama 3.1 8B",
-        "tpm": 6000,
-        "tpd": 14400
+        "model_id": "canopylabs/orpheus-arabic-saudi",
+        "limits": {
+          "RPM": "10",
+          "RPD": "100",
+          "TPM": "1.2K",
+          "TPD": "3.6K"
+        }
       },
       {
-        "name": "Llama 3.3 70B",
-        "tpm": 12000,
-        "tpd": 1000
+        "model_id": "canopylabs/orpheus-v1-english",
+        "limits": {
+          "RPM": "10",
+          "RPD": "100",
+          "TPM": "1.2K",
+          "TPD": "3.6K"
+        }
       },
       {
-        "name": "Llama 4 Maverick 17B 128E Instruct",
-        "tpm": 6000,
-        "tpd": 1000
+        "model_id": "groq/compound",
+        "limits": {
+          "RPM": "30",
+          "RPD": "250",
+          "TPD": "70K"
+        }
       },
       {
-        "name": "Llama 4 Scout Instruct",
-        "tpm": 30000,
-        "tpd": 1000
+        "model_id": "groq/compound-mini",
+        "limits": {
+          "RPM": "30",
+          "RPD": "250",
+          "TPD": "70K"
+        }
       },
       {
-        "name": "Whisper Large v3",
-        "tpd": 2000
+        "model_id": "llama-3.1-8b-instant",
+        "limits": {
+          "RPM": "30",
+          "RPD": "14.4K",
+          "TPM": "6K",
+          "TPD": "500K"
+        }
       },
       {
-        "name": "Whisper Large v3 Turbo",
-        "tpd": 2000
+        "model_id": "llama-3.3-70b-versatile",
+        "limits": {
+          "RPM": "30",
+          "RPD": "1K",
+          "TPM": "12K",
+          "TPD": "100K"
+        }
       },
       {
-        "name": "canopylabs/orpheus-arabic-saudi"
+        "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "limits": {
+          "RPM": "30",
+          "RPD": "1K",
+          "TPM": "6K",
+          "TPD": "500K"
+        }
       },
       {
-        "name": "canopylabs/orpheus-v1-english"
+        "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
+        "limits": {
+          "RPM": "30",
+          "RPD": "1K",
+          "TPM": "30K",
+          "TPD": "500K"
+        }
       },
       {
-        "name": "groq/compound",
-        "tpm": 70000,
-        "tpd": 250
+        "model_id": "meta-llama/llama-guard-4-12b",
+        "limits": {
+          "RPM": "30",
+          "RPD": "14.4K",
+          "TPM": "15K",
+          "TPD": "500K"
+        }
       },
       {
-        "name": "groq/compound-mini",
-        "tpm": 70000,
-        "tpd": 250
+        "model_id": "meta-llama/llama-prompt-guard-2-22m",
+        "limits": {
+          "RPM": "30",
+          "RPD": "14.4K",
+          "TPM": "15K",
+          "TPD": "500K"
+        }
       },
       {
-        "name": "meta-llama/llama-guard-4-12b",
-        "tpm": 15000,
-        "tpd": 14400
+        "model_id": "meta-llama/llama-prompt-guard-2-86m",
+        "limits": {
+          "RPM": "30",
+          "RPD": "14.4K",
+          "TPM": "15K",
+          "TPD": "500K"
+        }
       },
       {
-        "name": "meta-llama/llama-prompt-guard-2-22m"
+        "model_id": "moonshotai/kimi-k2-instruct",
+        "limits": {
+          "RPM": "60",
+          "RPD": "1K",
+          "TPM": "10K",
+          "TPD": "300K"
+        }
       },
       {
-        "name": "meta-llama/llama-prompt-guard-2-86m"
+        "model_id": "moonshotai/kimi-k2-instruct-0905",
+        "limits": {
+          "RPM": "60",
+          "RPD": "1K",
+          "TPM": "10K",
+          "TPD": "300K"
+        }
       },
       {
-        "name": "moonshotai/kimi-k2-instruct",
-        "tpm": 10000,
-        "tpd": 1000
+        "model_id": "openai/gpt-oss-120b",
+        "limits": {
+          "RPM": "30",
+          "RPD": "1K",
+          "TPM": "8K",
+          "TPD": "200K"
+        }
       },
       {
-        "name": "moonshotai/kimi-k2-instruct-0905",
-        "tpm": 10000,
-        "tpd": 1000
+        "model_id": "openai/gpt-oss-20b",
+        "limits": {
+          "RPM": "30",
+          "RPD": "1K",
+          "TPM": "8K",
+          "TPD": "200K"
+        }
       },
       {
-        "name": "openai/gpt-oss-120b",
-        "tpm": 8000,
-        "tpd": 1000
+        "model_id": "openai/gpt-oss-safeguard-20b",
+        "limits": {
+          "RPM": "30",
+          "RPD": "1K",
+          "TPM": "8K",
+          "TPD": "200K"
+        }
       },
       {
-        "name": "openai/gpt-oss-20b",
-        "tpm": 8000,
-        "tpd": 1000
+        "model_id": "qwen/qwen3-32b",
+        "limits": {
+          "RPM": "60",
+          "RPD": "1K",
+          "TPM": "6K",
+          "TPD": "500K"
+        }
       },
       {
-        "name": "openai/gpt-oss-safeguard-20b",
-        "tpm": 8000,
-        "tpd": 1000
+        "model_id": "whisper-large-v3",
+        "limits": {
+          "RPM": "20",
+          "RPD": "2K",
+          "TPM": "7.2K",
+          "TPD": "28.8K",
+          "context_window": "N/A"
+        }
       },
       {
-        "name": "qwen/qwen3-32b",
-        "tpm": 6000,
-        "tpd": 1000
+        "model_id": "whisper-large-v3-turbo",
+        "limits": {
+          "RPM": "20",
+          "RPD": "2K",
+          "TPM": "7.2K",
+          "TPD": "28.8K",
+          "context_window": "N/A"
+        }
       }
     ],
     "id": "groq",
-    "type": "Free"
+    "type": "Free",
+    "notes": "The free tier limits are listed per model in the table below. Higher limits are available on the Developer plan.",
+    "lastUpdated": "2026-02-17T21:20:07.724Z"
   },
   {
     "name": "Cohere",
