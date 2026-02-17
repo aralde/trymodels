@@ -111,7 +111,31 @@
     "models": [
       {
         "name": "Gemini 3 Flash",
-        "tpm": 250000.00000000003
+        "tpm": 250000
+      },
+      {
+        "name": "Gemini 2.5 Flash",
+        "tpm": 250000
+      },
+      {
+        "name": "Gemini 2.5 Flash-Lite",
+        "tpm": 250000
+      },
+      {
+        "name": "Gemma 3 27B Instruct",
+        "tpm": 15000
+      },
+      {
+        "name": "Gemma 3 12B Instruct",
+        "tpm": 15000
+      },
+      {
+        "name": "Gemma 3 4B Instruct",
+        "tpm": 15000
+      },
+      {
+        "name": "Gemma 3 1B Instruct",
+        "tpm": 15000
       }
     ],
     "id": "google-ai-studio",
@@ -128,6 +152,896 @@
       }
     ],
     "id": "gemini-2-5-flash",
+    "type": "Free"
+  },
+  {
+    "name": "NVIDIA NIM",
+    "url": "https://build.nvidia.com/explore/discover",
+    "limits": "Phone number verification required. Models tend to be context window limited. 40 requests/minute",
+    "models": [
+      {
+        "name": "Various open models",
+        "rpm": 40
+      }
+    ],
+    "id": "nvidia-nim",
+    "type": "Free"
+  },
+  {
+    "name": "Mistral (La Plateforme)",
+    "url": "https://console.mistral.ai/",
+    "limits": "Free tier (Experiment plan) requires opting into data training. Requires phone number verification. Per-model limits: 1 request/second, 500,000 tokens/minute, 1,000,000,000 tokens/month",
+    "models": [
+      {
+        "name": "Open and Proprietary Mistral models",
+        "rpm": 60,
+        "tpm": 500000
+      }
+    ],
+    "id": "mistral-la-plateforme",
+    "type": "Free"
+  },
+  {
+    "name": "Mistral (Codestral)",
+    "url": "https://codestral.mistral.ai/",
+    "limits": "Currently free to use. Monthly subscription based. Requires phone number verification. 30 requests/minute, 2,000 requests/day",
+    "models": [
+      {
+        "name": "Codestral",
+        "rpm": 30,
+        "tpd": 2000
+      }
+    ],
+    "id": "mistral-codestral",
+    "type": "Free"
+  },
+  {
+    "name": "HuggingFace Inference Providers",
+    "url": "https://huggingface.co/docs/inference-providers/en/index",
+    "limits": "HuggingFace Serverless Inference limited to models smaller than 10GB. Some popular models are supported even if they exceed 10GB. $0.10/month in credits",
+    "models": [
+      {
+        "name": "Various open models across supported providers"
+      }
+    ],
+    "id": "huggingface-inference-providers",
+    "type": "Free"
+  },
+  {
+    "name": "Vercel AI Gateway",
+    "url": "https://vercel.com/docs/ai-gateway",
+    "limits": "Routes to various supported providers. $5/month",
+    "models": [
+      {
+        "name": "Various supported providers"
+      }
+    ],
+    "id": "vercel-ai-gateway",
+    "type": "Free"
+  },
+  {
+    "name": "Cerebras",
+    "url": "https://cloud.cerebras.ai/",
+    "limits": "N/A",
+    "models": [
+      {
+        "name": "gpt-oss-120b",
+        "rpm": 30,
+        "tpm": 60000
+      },
+      {
+        "name": "Qwen 3 235B A22B Instruct",
+        "rpm": 30,
+        "tpm": 60000
+      },
+      {
+        "name": "Llama 3.3 70B",
+        "rpm": 30,
+        "tpm": 64000
+      },
+      {
+        "name": "Qwen 3 32B",
+        "rpm": 30,
+        "tpm": 64000
+      },
+      {
+        "name": "Llama 3.1 8B",
+        "rpm": 30,
+        "tpm": 60000
+      },
+      {
+        "name": "Z.ai GLM-4.6",
+        "rpm": 10,
+        "tpm": 60000
+      }
+    ],
+    "id": "cerebras",
+    "type": "Free"
+  },
+  {
+    "name": "Groq",
+    "url": "https://console.groq.com",
+    "limits": "N/A",
+    "models": [
+      {
+        "name": "Allam 2 7B",
+        "tpm": 6000,
+        "tpd": 7000
+      },
+      {
+        "name": "Llama 3.1 8B",
+        "tpm": 6000,
+        "tpd": 14400
+      },
+      {
+        "name": "Llama 3.3 70B",
+        "tpm": 12000,
+        "tpd": 1000
+      },
+      {
+        "name": "Llama 4 Maverick 17B 128E Instruct",
+        "tpm": 6000,
+        "tpd": 1000
+      },
+      {
+        "name": "Llama 4 Scout Instruct",
+        "tpm": 30000,
+        "tpd": 1000
+      },
+      {
+        "name": "Whisper Large v3",
+        "tpd": 2000
+      },
+      {
+        "name": "Whisper Large v3 Turbo",
+        "tpd": 2000
+      },
+      {
+        "name": "canopylabs/orpheus-arabic-saudi"
+      },
+      {
+        "name": "canopylabs/orpheus-v1-english"
+      },
+      {
+        "name": "groq/compound",
+        "tpm": 70000,
+        "tpd": 250
+      },
+      {
+        "name": "groq/compound-mini",
+        "tpm": 70000,
+        "tpd": 250
+      },
+      {
+        "name": "meta-llama/llama-guard-4-12b",
+        "tpm": 15000,
+        "tpd": 14400
+      },
+      {
+        "name": "meta-llama/llama-prompt-guard-2-22m"
+      },
+      {
+        "name": "meta-llama/llama-prompt-guard-2-86m"
+      },
+      {
+        "name": "moonshotai/kimi-k2-instruct",
+        "tpm": 10000,
+        "tpd": 1000
+      },
+      {
+        "name": "moonshotai/kimi-k2-instruct-0905",
+        "tpm": 10000,
+        "tpd": 1000
+      },
+      {
+        "name": "openai/gpt-oss-120b",
+        "tpm": 8000,
+        "tpd": 1000
+      },
+      {
+        "name": "openai/gpt-oss-20b",
+        "tpm": 8000,
+        "tpd": 1000
+      },
+      {
+        "name": "openai/gpt-oss-safeguard-20b",
+        "tpm": 8000,
+        "tpd": 1000
+      },
+      {
+        "name": "qwen/qwen3-32b",
+        "tpm": 6000,
+        "tpd": 1000
+      }
+    ],
+    "id": "groq",
+    "type": "Free"
+  },
+  {
+    "name": "Cohere",
+    "url": "https://cohere.com",
+    "limits": "20 requests/minute, 1,000 requests/month. Models share a common monthly quota.",
+    "models": [
+      {
+        "name": "c4ai-aya-expanse-32b",
+        "rpm": 20
+      },
+      {
+        "name": "c4ai-aya-expanse-8b",
+        "rpm": 20
+      },
+      {
+        "name": "c4ai-aya-vision-32b",
+        "rpm": 20
+      },
+      {
+        "name": "c4ai-aya-vision-8b",
+        "rpm": 20
+      },
+      {
+        "name": "command-a-03-2025",
+        "rpm": 20
+      },
+      {
+        "name": "command-a-reasoning-08-2025",
+        "rpm": 20
+      },
+      {
+        "name": "command-a-translate-08-2025",
+        "rpm": 20
+      },
+      {
+        "name": "command-a-vision-07-2025",
+        "rpm": 20
+      },
+      {
+        "name": "command-r-08-2024",
+        "rpm": 20
+      },
+      {
+        "name": "command-r-plus-08-2024",
+        "rpm": 20
+      },
+      {
+        "name": "command-r7b-12-2024",
+        "rpm": 20
+      },
+      {
+        "name": "command-r7b-arabic-02-2025",
+        "rpm": 20
+      }
+    ],
+    "id": "cohere",
+    "type": "Free"
+  },
+  {
+    "name": "GitHub Models",
+    "url": "https://github.com/marketplace/models",
+    "limits": "Extremely restrictive input/output token limits. Dependent on Copilot subscription tier (Free/Pro/Pro+/Business/Enterprise)",
+    "models": [
+      {
+        "name": "AI21 Jamba 1.5 Large"
+      },
+      {
+        "name": "Codestral 25.01"
+      },
+      {
+        "name": "Cohere Command A"
+      },
+      {
+        "name": "Cohere Command R 08-2024"
+      },
+      {
+        "name": "Cohere Command R+ 08-2024"
+      },
+      {
+        "name": "DeepSeek-R1"
+      },
+      {
+        "name": "DeepSeek-R1-0528"
+      },
+      {
+        "name": "DeepSeek-V3-0324"
+      },
+      {
+        "name": "Grok 3"
+      },
+      {
+        "name": "Grok 3 Mini"
+      },
+      {
+        "name": "Llama 4 Maverick 17B 128E Instruct FP8"
+      },
+      {
+        "name": "Llama 4 Scout 17B 16E Instruct"
+      },
+      {
+        "name": "Llama-3.2-11B-Vision-Instruct"
+      },
+      {
+        "name": "Llama-3.2-90B-Vision-Instruct"
+      },
+      {
+        "name": "Llama-3.3-70B-Instruct"
+      },
+      {
+        "name": "MAI-DS-R1"
+      },
+      {
+        "name": "Meta-Llama-3.1-405B-Instruct"
+      },
+      {
+        "name": "Meta-Llama-3.1-8B-Instruct"
+      },
+      {
+        "name": "Ministral 3B"
+      },
+      {
+        "name": "Mistral Medium 3 (25.05)"
+      },
+      {
+        "name": "Mistral Small 3.1"
+      },
+      {
+        "name": "OpenAI GPT-4.1"
+      },
+      {
+        "name": "OpenAI GPT-4.1-mini"
+      },
+      {
+        "name": "OpenAI GPT-4.1-nano"
+      },
+      {
+        "name": "OpenAI GPT-4o"
+      },
+      {
+        "name": "OpenAI GPT-4o mini"
+      },
+      {
+        "name": "OpenAI Text Embedding 3 (large)"
+      },
+      {
+        "name": "OpenAI Text Embedding 3 (small)"
+      },
+      {
+        "name": "OpenAI gpt-5"
+      },
+      {
+        "name": "OpenAI gpt-5-chat (preview)"
+      },
+      {
+        "name": "OpenAI gpt-5-mini"
+      },
+      {
+        "name": "OpenAI gpt-5-nano"
+      },
+      {
+        "name": "OpenAI o1"
+      },
+      {
+        "name": "OpenAI o1-mini"
+      },
+      {
+        "name": "OpenAI o1-preview"
+      },
+      {
+        "name": "OpenAI o3"
+      },
+      {
+        "name": "OpenAI o3-mini"
+      },
+      {
+        "name": "OpenAI o4-mini"
+      },
+      {
+        "name": "Phi-4"
+      },
+      {
+        "name": "Phi-4-mini-instruct"
+      },
+      {
+        "name": "Phi-4-mini-reasoning"
+      },
+      {
+        "name": "Phi-4-multimodal-instruct"
+      },
+      {
+        "name": "Phi-4-reasoning"
+      }
+    ],
+    "id": "github-models",
+    "type": "Free"
+  },
+  {
+    "name": "Cloudflare Workers AI",
+    "url": "https://developers.cloudflare.com/workers-ai",
+    "limits": "10,000 neurons/day",
+    "models": [
+      {
+        "name": "@cf/aisingapore/gemma-sea-lion-v4-27b-it"
+      },
+      {
+        "name": "@cf/ibm-granite/granite-4.0-h-micro"
+      },
+      {
+        "name": "@cf/openai/gpt-oss-120b"
+      },
+      {
+        "name": "@cf/openai/gpt-oss-20b"
+      },
+      {
+        "name": "@cf/qwen/qwen3-30b-a3b-fp8"
+      },
+      {
+        "name": "DeepSeek R1 Distill Qwen 32B"
+      },
+      {
+        "name": "Deepseek Coder 6.7B Base (AWQ)"
+      },
+      {
+        "name": "Deepseek Coder 6.7B Instruct (AWQ)"
+      },
+      {
+        "name": "Deepseek Math 7B Instruct"
+      },
+      {
+        "name": "Discolm German 7B v1 (AWQ)"
+      },
+      {
+        "name": "Falcom 7B Instruct"
+      },
+      {
+        "name": "Gemma 2B Instruct (LoRA)"
+      },
+      {
+        "name": "Gemma 3 12B Instruct"
+      },
+      {
+        "name": "Gemma 7B Instruct"
+      },
+      {
+        "name": "Gemma 7B Instruct (LoRA)"
+      },
+      {
+        "name": "Hermes 2 Pro Mistral 7B"
+      },
+      {
+        "name": "Llama 2 13B Chat (AWQ)"
+      },
+      {
+        "name": "Llama 2 7B Chat (FP16)"
+      },
+      {
+        "name": "Llama 2 7B Chat (INT8)"
+      },
+      {
+        "name": "Llama 2 7B Chat (LoRA)"
+      },
+      {
+        "name": "Llama 3 8B Instruct"
+      },
+      {
+        "name": "Llama 3 8B Instruct (AWQ)"
+      },
+      {
+        "name": "Llama 3.1 8B Instruct (AWQ)"
+      },
+      {
+        "name": "Llama 3.1 8B Instruct (FP8)"
+      },
+      {
+        "name": "Llama 3.2 11B Vision Instruct"
+      },
+      {
+        "name": "Llama 3.2 1B Instruct"
+      },
+      {
+        "name": "Llama 3.2 3B Instruct"
+      },
+      {
+        "name": "Llama 3.3 70B Instruct (FP8)"
+      },
+      {
+        "name": "Llama 4 Scout Instruct"
+      },
+      {
+        "name": "Llama Guard 3 8B"
+      },
+      {
+        "name": "Mistral 7B Instruct v0.1"
+      },
+      {
+        "name": "Mistral 7B Instruct v0.1 (AWQ)"
+      },
+      {
+        "name": "Mistral 7B Instruct v0.2"
+      },
+      {
+        "name": "Mistral 7B Instruct v0.2 (LoRA)"
+      },
+      {
+        "name": "Mistral Small 3.1 24B Instruct"
+      },
+      {
+        "name": "Neural Chat 7B v3.1 (AWQ)"
+      },
+      {
+        "name": "OpenChat 3.5 0106"
+      },
+      {
+        "name": "OpenHermes 2.5 Mistral 7B (AWQ)"
+      },
+      {
+        "name": "Phi-2"
+      },
+      {
+        "name": "Qwen 1.5 0.5B Chat"
+      },
+      {
+        "name": "Qwen 1.5 1.8B Chat"
+      },
+      {
+        "name": "Qwen 1.5 14B Chat (AWQ)"
+      },
+      {
+        "name": "Qwen 1.5 7B Chat (AWQ)"
+      },
+      {
+        "name": "Qwen 2.5 Coder 32B Instruct"
+      },
+      {
+        "name": "Qwen QwQ 32B"
+      },
+      {
+        "name": "SQLCoder 7B 2"
+      },
+      {
+        "name": "Starling LM 7B Beta"
+      },
+      {
+        "name": "TinyLlama 1.1B Chat v1.0"
+      },
+      {
+        "name": "Una Cybertron 7B v2 (BF16)"
+      },
+      {
+        "name": "Zephyr 7B Beta (AWQ)"
+      }
+    ],
+    "id": "cloudflare-workers-ai",
+    "type": "Free"
+  },
+  {
+    "name": "Google Cloud Vertex AI",
+    "url": "https://console.cloud.google.com/vertex-ai/model-garden",
+    "limits": "Very stringent payment verification for Google Cloud.",
+    "models": [
+      {
+        "name": "Llama 3.2 90B Vision Instruct",
+        "rpm": 30
+      },
+      {
+        "name": "Llama 3.1 70B Instruct",
+        "rpm": 60
+      },
+      {
+        "name": "Llama 3.1 8B Instruct",
+        "rpm": 60
+      }
+    ],
+    "id": "google-cloud-vertex-ai",
+    "type": "Free"
+  },
+  {
+    "name": "Fireworks",
+    "url": "https://fireworks.ai/",
+    "limits": "Credits: $1. Models: Various open models",
+    "models": [
+      {
+        "name": "Various open models"
+      }
+    ],
+    "id": "fireworks",
+    "type": "Free"
+  },
+  {
+    "name": "Baseten",
+    "url": "https://app.baseten.co/",
+    "limits": "Credits: $30. Models: Any supported model - pay by compute time",
+    "models": [
+      {
+        "name": "Any supported model - pay by compute time"
+      }
+    ],
+    "id": "baseten",
+    "type": "Free"
+  },
+  {
+    "name": "Nebius",
+    "url": "https://studio.nebius.com/",
+    "limits": "Credits: $1. Models: Various open models",
+    "models": [
+      {
+        "name": "Various open models"
+      }
+    ],
+    "id": "nebius",
+    "type": "Free"
+  },
+  {
+    "name": "Novita",
+    "url": "https://novita.ai/?ref=ytblmjc&utm_source=affiliate",
+    "limits": "Credits: $0.5 for 1 year. Models: Various open models",
+    "models": [
+      {
+        "name": "Various open models"
+      }
+    ],
+    "id": "novita",
+    "type": "Free"
+  },
+  {
+    "name": "AI21",
+    "url": "https://studio.ai21.com/",
+    "limits": "Credits: $10 for 3 months. Models: Jamba family of models",
+    "models": [
+      {
+        "name": "Jamba family of models"
+      }
+    ],
+    "id": "ai21",
+    "type": "Free"
+  },
+  {
+    "name": "Upstage",
+    "url": "https://console.upstage.ai/",
+    "limits": "Credits: $10 for 3 months. Models: Solar Pro/Mini",
+    "models": [
+      {
+        "name": "Solar Pro/Mini"
+      }
+    ],
+    "id": "upstage",
+    "type": "Free"
+  },
+  {
+    "name": "NLP Cloud",
+    "url": "https://nlpcloud.com/home",
+    "limits": "Credits: $15. Requirements: Phone number verification. Models: Various open models",
+    "models": [
+      {
+        "name": "Various open models"
+      }
+    ],
+    "id": "nlp-cloud",
+    "type": "Free"
+  },
+  {
+    "name": "Alibaba Cloud (International) Model Studio",
+    "url": "https://bailian.console.alibabacloud.com/",
+    "limits": "Credits: 1 million tokens/model. Models: Various open and proprietary Qwen models",
+    "models": [
+      {
+        "name": "Various open and proprietary Qwen models"
+      }
+    ],
+    "id": "alibaba-cloud-international-model-studio",
+    "type": "Free"
+  },
+  {
+    "name": "Modal",
+    "url": "https://modal.com",
+    "limits": "Credits: $5/month upon sign up, $30/month with payment method added. Models: Any supported model - pay by compute time",
+    "models": [
+      {
+        "name": "Any supported model - pay by compute time"
+      }
+    ],
+    "id": "modal",
+    "type": "Free"
+  },
+  {
+    "name": "Inference.net",
+    "url": "https://inference.net",
+    "limits": "Credits: $1, $25 on responding to email survey. Models: Various open models",
+    "models": [
+      {
+        "name": "Various open models"
+      }
+    ],
+    "id": "inference-net",
+    "type": "Free"
+  },
+  {
+    "name": "Hyperbolic",
+    "url": "https://app.hyperbolic.xyz/",
+    "limits": "Credits: $1",
+    "models": [
+      {
+        "name": "DeepSeek V3"
+      },
+      {
+        "name": "DeepSeek V3 0324"
+      },
+      {
+        "name": "Llama 3.1 405B Base"
+      },
+      {
+        "name": "Llama 3.1 405B Instruct"
+      },
+      {
+        "name": "Llama 3.1 70B Instruct"
+      },
+      {
+        "name": "Llama 3.1 8B Instruct"
+      },
+      {
+        "name": "Llama 3.2 3B Instruct"
+      },
+      {
+        "name": "Llama 3.3 70B Instruct"
+      },
+      {
+        "name": "Pixtral 12B (2409)"
+      },
+      {
+        "name": "Qwen QwQ 32B"
+      },
+      {
+        "name": "Qwen2.5 72B Instruct"
+      },
+      {
+        "name": "Qwen2.5 Coder 32B Instruct"
+      },
+      {
+        "name": "Qwen2.5 VL 72B Instruct"
+      },
+      {
+        "name": "Qwen2.5 VL 7B Instruct"
+      },
+      {
+        "name": "deepseek-ai/deepseek-r1-0528"
+      },
+      {
+        "name": "openai/gpt-oss-120b"
+      },
+      {
+        "name": "openai/gpt-oss-120b-turbo"
+      },
+      {
+        "name": "openai/gpt-oss-20b"
+      },
+      {
+        "name": "qwen/qwen3-235b-a22b"
+      },
+      {
+        "name": "qwen/qwen3-235b-a22b-instruct-2507"
+      },
+      {
+        "name": "qwen/qwen3-coder-480b-a35b-instruct"
+      },
+      {
+        "name": "qwen/qwen3-next-80b-a3b-instruct"
+      },
+      {
+        "name": "qwen/qwen3-next-80b-a3b-thinking"
+      }
+    ],
+    "id": "hyperbolic",
+    "type": "Free"
+  },
+  {
+    "name": "SambaNova Cloud",
+    "url": "https://cloud.sambanova.ai/",
+    "limits": "Credits: $5 for 3 months",
+    "models": [
+      {
+        "name": "E5-Mistral-7B-Instruct"
+      },
+      {
+        "name": "Llama 3.1 8B"
+      },
+      {
+        "name": "Llama 3.3 70B"
+      },
+      {
+        "name": "Llama 3.3 70B"
+      },
+      {
+        "name": "Llama-4-Maverick-17B-128E-Instruct"
+      },
+      {
+        "name": "Qwen/Qwen3-235B"
+      },
+      {
+        "name": "Qwen/Qwen3-32B"
+      },
+      {
+        "name": "Whisper-Large-v3"
+      },
+      {
+        "name": "deepseek-ai/DeepSeek-R1-0528"
+      },
+      {
+        "name": "deepseek-ai/DeepSeek-R1-Distill-Llama-70B"
+      },
+      {
+        "name": "deepseek-ai/DeepSeek-V3-0324"
+      },
+      {
+        "name": "deepseek-ai/DeepSeek-V3.1"
+      },
+      {
+        "name": "deepseek-ai/DeepSeek-V3.1-Terminus"
+      },
+      {
+        "name": "deepseek-ai/DeepSeek-V3.2"
+      },
+      {
+        "name": "openai/gpt-oss-120b"
+      },
+      {
+        "name": "tbd"
+      }
+    ],
+    "id": "sambanova-cloud",
+    "type": "Free"
+  },
+  {
+    "name": "Scaleway Generative APIs",
+    "url": "https://console.scaleway.com/generative-api/models",
+    "limits": "Credits: 1,000,000 free tokens",
+    "models": [
+      {
+        "name": "BGE-Multilingual-Gemma2"
+      },
+      {
+        "name": "DeepSeek R1 Distill Llama 70B"
+      },
+      {
+        "name": "Gemma 3 27B Instruct"
+      },
+      {
+        "name": "Llama 3.1 8B Instruct"
+      },
+      {
+        "name": "Llama 3.3 70B Instruct"
+      },
+      {
+        "name": "Mistral Nemo 2407"
+      },
+      {
+        "name": "Pixtral 12B (2409)"
+      },
+      {
+        "name": "Whisper Large v3"
+      },
+      {
+        "name": "devstral-2-123b-instruct-2512"
+      },
+      {
+        "name": "gpt-oss-120b"
+      },
+      {
+        "name": "holo2-30b-a3b"
+      },
+      {
+        "name": "mistral-small-3.2-24b-instruct-2506"
+      },
+      {
+        "name": "qwen3-235b-a22b-instruct-2507"
+      },
+      {
+        "name": "qwen3-coder-30b-a3b-instruct"
+      },
+      {
+        "name": "qwen3-embedding-8b"
+      },
+      {
+        "name": "voxtral-small-24b-2507"
+      }
+    ],
+    "id": "scaleway-generative-apis",
     "type": "Free"
   }
 ]
