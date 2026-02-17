@@ -195,7 +195,7 @@
     "name": "OpenRouter",
     "url": "https://openrouter.ai",
     "type": "Free",
-    "limits": "20 requests/minute, 50 requests/day, Up to 1000 requests/day with $10 lifetime topup. Models share a common quota.",
+    "limits": "20 requests/minute, 50 requests/day. Up to 1000 requests/day with $10 lifetime topup. Models share a common quota.",
     "models": [
       {
         "name": ": free",
@@ -423,7 +423,7 @@
         "rpm": 10,
         "rpd": 100,
         "tpm": 60000,
-        "tpd": 100000
+        "tpd": 1000000
       }
     ]
   },
@@ -898,7 +898,7 @@
     "name": "Hyperbolic",
     "url": "https://app.hyperbolic.xyz/",
     "type": "Free",
-    "limits": "Credits: $1",
+    "limits": "Credits: $1.",
     "models": [
       {
         "name": "DeepSeek V3"
@@ -976,7 +976,7 @@
     "name": "SambaNova Cloud",
     "url": "https://cloud.sambanova.ai/",
     "type": "Free",
-    "limits": "Credits: $5 for 3 months",
+    "limits": "Credits: $5 for 3 months.",
     "models": [
       {
         "name": "E5-Mistral-7B-Instruct"
@@ -1033,7 +1033,7 @@
     "name": "Scaleway Generative APIs",
     "url": "https://console.scaleway.com/generative-api/models",
     "type": "Free",
-    "limits": "Credits: 1,000,000 free tokens",
+    "limits": "Credits: 1,000,000 free tokens.",
     "models": [
       {
         "name": "BGE-Multilingual-Gemma2"
@@ -1158,7 +1158,7 @@
   {
     "name": "Fireworks",
     "url": "https://fireworks.ai/",
-    "limits": "Credits: $1",
+    "limits": "Credits: $1. Models: Various open models",
     "models": [
       {
         "name": "Various open models"
@@ -1193,7 +1193,7 @@
   },
   {
     "name": "Novita",
-    "url": "https://novita.ai/?ref=ytblmjc&utm_source=affiliate",
+    "url": "https://novita.ai/",
     "limits": "Credits: $0.5 for 1 year. Models: Various open models",
     "models": [
       {
@@ -1206,7 +1206,7 @@
   {
     "name": "AI21",
     "url": "https://studio.ai21.com/",
-    "limits": "Credits: $10 for 3 months",
+    "limits": "Credits: $10 for 3 months. Models: Jamba family of models",
     "models": [
       {
         "name": "Jamba family of models"
@@ -1218,7 +1218,7 @@
   {
     "name": "Upstage",
     "url": "https://console.upstage.ai/",
-    "limits": "Credits: $10 for 3 months",
+    "limits": "Credits: $10 for 3 months. Models: Solar Pro/Mini",
     "models": [
       {
         "name": "Solar Pro/Mini"
@@ -1242,7 +1242,7 @@
   {
     "name": "Alibaba Cloud (International) Model Studio",
     "url": "https://bailian.console.alibabacloud.com/",
-    "limits": "Credits: 1 million tokens/model",
+    "limits": "Credits: 1 million tokens/model. Models: Various open and proprietary Qwen models",
     "models": [
       {
         "name": "Various open and proprietary Qwen models"
