@@ -31,14 +31,14 @@
         "name": "groq/compound",
         "rpm": 30,
         "rpd": 250,
-        "tpd": 70000,
+        "tpd": 250,
         "tpm": 70000
       },
       {
         "name": "groq/compound-mini",
         "rpm": 30,
         "rpd": 250,
-        "tpd": 70000,
+        "tpd": 250,
         "tpm": 70000
       },
       {
@@ -74,7 +74,7 @@
         "rpm": 30,
         "rpd": 14400,
         "tpm": 15000,
-        "tpd": 500000
+        "tpd": 14400
       },
       {
         "name": "meta-llama/llama-prompt-guard-2-22m",
@@ -95,42 +95,42 @@
         "rpm": 60,
         "rpd": 1000,
         "tpm": 10000,
-        "tpd": 300000
+        "tpd": 1000
       },
       {
         "name": "moonshotai/kimi-k2-instruct-0905",
         "rpm": 60,
         "rpd": 1000,
         "tpm": 10000,
-        "tpd": 300000
+        "tpd": 1000
       },
       {
         "name": "openai/gpt-oss-120b",
         "rpm": 30,
         "rpd": 1000,
         "tpm": 8000,
-        "tpd": 200000
+        "tpd": 1000
       },
       {
         "name": "openai/gpt-oss-20b",
         "rpm": 30,
         "rpd": 1000,
         "tpm": 8000,
-        "tpd": 200000
+        "tpd": 1000
       },
       {
         "name": "openai/gpt-oss-safeguard-20b",
         "rpm": 30,
         "rpd": 1000,
         "tpm": 8000,
-        "tpd": 200000
+        "tpd": 1000
       },
       {
         "name": "qwen/qwen3-32b",
         "rpm": 60,
         "rpd": 1000,
         "tpm": 6000,
-        "tpd": 500000
+        "tpd": 1000
       },
       {
         "name": "whisper-large-v3",
@@ -149,37 +149,44 @@
       {
         "name": "Allam 2 7B",
         "rpd": 7000,
-        "tpm": 6000
+        "tpm": 6000,
+        "tpd": 7000
       },
       {
         "name": "Llama 3.1 8B",
         "rpd": 14400,
-        "tpm": 6000
+        "tpm": 6000,
+        "tpd": 14400
       },
       {
         "name": "Llama 3.3 70B",
         "rpd": 1000,
-        "tpm": 12000
+        "tpm": 12000,
+        "tpd": 1000
       },
       {
         "name": "Llama 4 Maverick 17B 128E Instruct",
         "rpd": 1000,
-        "tpm": 6000
+        "tpm": 6000,
+        "tpd": 1000
       },
       {
         "name": "Llama 4 Scout Instruct",
         "rpd": 1000,
-        "tpm": 30000
+        "tpm": 30000,
+        "tpd": 1000
       },
       {
         "name": "Whisper Large v3",
         "rpd": 2000,
-        "tpm": 7200
+        "tpm": 7200,
+        "tpd": 2000
       },
       {
         "name": "Whisper Large v3 Turbo",
         "rpd": 2000,
-        "tpm": 7200
+        "tpm": 7200,
+        "tpd": 2000
       }
     ]
   },
@@ -188,7 +195,7 @@
     "name": "OpenRouter",
     "url": "https://openrouter.ai",
     "type": "Free",
-    "limits": "20 requests/minute, 50 requests/day. Up to 1000 requests/day with $10 lifetime topup. Models share a common quota.",
+    "limits": "20 requests/minute, 50 requests/day, Up to 1000 requests/day with $10 lifetime topup. Models share a common quota.",
     "models": [
       {
         "name": ": free",
@@ -416,7 +423,7 @@
         "rpm": 10,
         "rpd": 100,
         "tpm": 60000,
-        "tpd": 1000000
+        "tpd": 100000
       }
     ]
   },
@@ -1085,15 +1092,15 @@
     "models": [
       {
         "name": "Gemini 3 Flash",
-        "tpm": 250000.00000000003
+        "tpm": 250000
       },
       {
         "name": "Gemini 2.5 Flash",
-        "tpm": 250000.00000000003
+        "tpm": 250000
       },
       {
         "name": "Gemini 2.5 Flash-Lite",
-        "tpm": 250000.00000000003
+        "tpm": 250000
       },
       {
         "name": "Gemma 3 27B Instruct",
@@ -1163,7 +1170,7 @@
   {
     "name": "Baseten",
     "url": "https://app.baseten.co/",
-    "limits": "Credits: $30",
+    "limits": "Credits: $30. Models: Any supported model - pay by compute time",
     "models": [
       {
         "name": "Any supported model - pay by compute time"
@@ -1175,7 +1182,7 @@
   {
     "name": "Nebius",
     "url": "https://studio.nebius.com/",
-    "limits": "Credits: $1",
+    "limits": "Credits: $1. Models: Various open models",
     "models": [
       {
         "name": "Various open models"
@@ -1187,7 +1194,7 @@
   {
     "name": "Novita",
     "url": "https://novita.ai/?ref=ytblmjc&utm_source=affiliate",
-    "limits": "Credits: $0.5 for 1 year",
+    "limits": "Credits: $0.5 for 1 year. Models: Various open models",
     "models": [
       {
         "name": "Various open models"
@@ -1223,7 +1230,7 @@
   {
     "name": "NLP Cloud",
     "url": "https://nlpcloud.com/home",
-    "limits": "Credits: $15. Requirements: Phone number verification",
+    "limits": "Credits: $15. Requirements: Phone number verification. Models: Various open models",
     "models": [
       {
         "name": "Various open models"
@@ -1247,7 +1254,7 @@
   {
     "name": "Modal",
     "url": "https://modal.com",
-    "limits": "Credits: $5/month upon sign up, $30/month with payment method added",
+    "limits": "Credits: $5/month upon sign up, $30/month with payment method added. Models: Any supported model - pay by compute time",
     "models": [
       {
         "name": "Any supported model - pay by compute time"
@@ -1259,7 +1266,7 @@
   {
     "name": "Inference.net",
     "url": "https://inference.net",
-    "limits": "Credits: $1, $25 on responding to email survey",
+    "limits": "Credits: $1, $25 on responding to email survey. Models: Various open models",
     "models": [
       {
         "name": "Various open models"
