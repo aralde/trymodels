@@ -2,7 +2,7 @@
   {
     "name": "OpenRouter",
     "url": "https://openrouter.ai/docs/limits",
-    "limits": "Free models have different limits based on credit purchase history. Basic free tier has 20 RPM and a daily limit of 50 requests if less than 10 credits purchased, or 1000 requests if at least 10 credits purchased.",
+    "limits": "Free tier usage is governed by requests per minute and requests per day, with limits varying based on whether any credits have been purchased.",
     "models": [
       {
         "model_id": ":free",
@@ -13,84 +13,83 @@
         }
       },
       {
-        "model_id": "All Models (with < 10 credits purchased)",
+        "model_id": ":free (if purchased < 10 credits)",
         "limits": {
-          "RPD": "50"
+          "RPD": "50",
+          "TPD": "N/A"
         }
       },
       {
-        "model_id": "All Models (with >= 10 credits purchased)",
+        "model_id": ":free (if purchased >= 10 credits)",
         "limits": {
-          "RPD": "1000"
+          "RPD": "1000",
+          "TPD": "N/A"
         }
       }
     ],
     "id": "openrouter",
     "type": "Free",
-    "notes": "Free models have different limits based on credit purchase history. Basic free tier has 20 RPM and a daily limit of 50 requests if less than 10 credits purchased, or 1000 requests if at least 10 credits purchased.",
-    "lastUpdated": "2026-02-18T09:35:42.385Z"
+    "notes": "Free tier usage is governed by requests per minute and requests per day, with limits varying based on whether any credits have been purchased.",
+    "lastUpdated": "2026-02-18T09:37:25.510Z"
   },
   {
     "name": "Google AI Studio",
     "url": "https://ai.google.dev/pricing",
-    "limits": "Free of charge with generous limits for developers and small projects. Content used to improve Google products.",
+    "limits": "Generous limits for free tier, scale up with pay-as-you-go pricing.",
     "models": [
       {
         "model_id": "Gemini 3 Pro",
         "limits": {
-          "context_window": "200k tokens"
+          "RPD": "1500"
         }
       },
       {
         "model_id": "Gemini 3 Flash",
         "limits": {
-          "context_window": "200k tokens"
+          "RPD": "1500"
         }
-      },
-      {
-        "model_id": "Gemini 3 Pro Image",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 3 Flash Image",
-        "limits": {}
       },
       {
         "model_id": "Gemini 2.5 Pro",
         "limits": {
-          "context_window": "1M token"
+          "RPD": "500",
+          "context_window": "1M"
         }
       },
       {
         "model_id": "Gemini 2.5 Flash",
         "limits": {
-          "context_window": "1M token"
+          "RPD": "500",
+          "context_window": "1M"
         }
       },
       {
         "model_id": "Gemini 2.5 Flash-Lite",
         "limits": {
-          "context_window": "1M token"
+          "RPD": "500",
+          "context_window": "1M"
         }
       },
       {
         "model_id": "Gemini 2.5 Flash Preview",
         "limits": {
-          "context_window": "1M token"
+          "RPD": "500",
+          "context_window": "1M"
         }
       },
       {
         "model_id": "Gemini 2.5 Flash-Lite Preview",
         "limits": {
-          "context_window": "1M token"
+          "RPD": "500",
+          "context_window": "1M"
         }
       },
       {
-        "model_id": "Gemini 2.5 Flash Native Audio",
+        "model_id": "Gemini 2.5 Flash Native Audio (Live API)",
         "limits": {}
       },
       {
-        "model_id": "Gemini 2.5 Flash Image",
+        "model_id": "Gemini 2.5 Flash Image Preview",
         "limits": {}
       },
       {
@@ -131,7 +130,9 @@
       },
       {
         "model_id": "Gemini Robotics-ER 1.5 Preview",
-        "limits": {}
+        "limits": {
+          "RPD": "500"
+        }
       },
       {
         "model_id": "Gemini 2.5 Computer Use Preview",
@@ -146,171 +147,66 @@
         "limits": {}
       },
       {
-        "model_id": "Gemini 2.5 Flash-Lite (Grounding Search)",
-        "limits": {
-          "RPD": "500"
-        }
+        "model_id": "Gemini 3 Pro Image Preview",
+        "limits": {}
       },
       {
-        "model_id": "Gemini 2.5 Flash-Lite (Grounding Maps)",
-        "limits": {
-          "RPD": "500"
-        }
+        "model_id": "Gemini 3 Flash Preview",
+        "limits": {}
       },
       {
-        "model_id": "Gemini 2.5 Flash (Grounding Search)",
-        "limits": {
-          "RPD": "500"
-        }
-      },
-      {
-        "model_id": "Gemini 2.5 Flash (Grounding Maps)",
-        "limits": {
-          "RPD": "500"
-        }
-      },
-      {
-        "model_id": "Gemini 2.5 Pro (Grounding Search)",
-        "limits": {
-          "RPD": "500"
-        }
-      },
-      {
-        "model_id": "Gemini 2.5 Pro (Grounding Maps)",
-        "limits": {
-          "RPD": "500"
-        }
-      },
-      {
-        "model_id": "Gemini Robotics-ER 1.5 Preview (Grounding Search)",
-        "limits": {
-          "RPD": "500"
-        }
-      },
-      {
-        "model_id": "Gemini Robotics-ER 1.5 Preview (Grounding Maps)",
-        "limits": {
-          "RPD": "500"
-        }
-      },
-      {
-        "model_id": "Gemini 3 Pro Preview (Grounding Search)",
+        "model_id": "Gemini 3 Pro",
         "limits": {
           "RPD": "1500"
         }
       },
       {
-        "model_id": "Gemini 3 Pro Preview (Grounding Maps)",
+        "model_id": "Gemini 3 Flash",
         "limits": {
-          "RPD": "10000"
+          "RPD": "1500"
         }
       },
       {
-        "model_id": "Gemini 2.5 Computer Use Preview",
+        "model_id": "Gemini 2.5 Pro",
+        "limits": {
+          "RPD": "500",
+          "context_window": "1M"
+        }
+      },
+      {
+        "model_id": "Gemini 2.5 Flash",
+        "limits": {
+          "RPD": "500",
+          "context_window": "1M"
+        }
+      },
+      {
+        "model_id": "Gemini 2.5 Flash-Lite",
+        "limits": {
+          "RPD": "500",
+          "context_window": "1M"
+        }
+      },
+      {
+        "model_id": "Gemini 2.5 Flash Preview",
+        "limits": {
+          "RPD": "500",
+          "context_window": "1M"
+        }
+      },
+      {
+        "model_id": "Gemini 2.5 Flash-Lite Preview",
+        "limits": {
+          "RPD": "500",
+          "context_window": "1M"
+        }
+      },
+      {
+        "model_id": "Gemini 2.5 Flash Native Audio (Live API)",
         "limits": {}
       },
       {
-        "model_id": "Gemini 2.5 Flash-Lite (Code Execution)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash-Lite (URL context)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash (Code Execution)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash (URL context)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Pro (Code Execution)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Pro (URL context)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 3 Pro Preview (Code Execution)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 3 Pro Preview (URL context)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash-Lite (File Search)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash (File Search)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Pro (File Search)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 3 Pro Preview (File Search)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash-Lite (Image Generation)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash (Image Generation)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Pro (Image Generation)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 3 Pro Preview (Image Generation)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 3 Flash Image (Image Generation)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 3 Pro Image (Image Generation)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash-Lite (Video Generation)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash (Video Generation)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Pro (Video Generation)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 3 Pro Preview (Video Generation)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash-Lite (Audio Generation)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash (Audio Generation)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Pro (Audio Generation)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 3 Pro Preview (Audio Generation)",
+        "model_id": "Gemini 2.5 Flash Image Preview",
         "limits": {}
       },
       {
@@ -322,182 +218,56 @@
         "limits": {}
       },
       {
-        "model_id": "Gemini 2.5 Flash-Lite (Google Search Tool)",
+        "model_id": "Gemini 2.0 Flash",
+        "limits": {}
+      },
+      {
+        "model_id": "Gemini 2.0 Flash-Lite",
+        "limits": {}
+      },
+      {
+        "model_id": "Imagen 4",
+        "limits": {}
+      },
+      {
+        "model_id": "Veo 3.1",
+        "limits": {}
+      },
+      {
+        "model_id": "Veo 3",
+        "limits": {}
+      },
+      {
+        "model_id": "Veo 2",
+        "limits": {}
+      },
+      {
+        "model_id": "Gemini Embedding",
+        "limits": {}
+      },
+      {
+        "model_id": "Gemini Robotics-ER 1.5 Preview",
         "limits": {
           "RPD": "500"
         }
       },
       {
-        "model_id": "Gemini 2.5 Flash-Lite (Google Maps Tool)",
-        "limits": {
-          "RPD": "500"
-        }
-      },
-      {
-        "model_id": "Gemini 2.5 Flash (Google Search Tool)",
-        "limits": {
-          "RPD": "500"
-        }
-      },
-      {
-        "model_id": "Gemini 2.5 Flash (Google Maps Tool)",
-        "limits": {
-          "RPD": "500"
-        }
-      },
-      {
-        "model_id": "Gemini 2.5 Pro (Google Search Tool)",
-        "limits": {
-          "RPD": "500"
-        }
-      },
-      {
-        "model_id": "Gemini 2.5 Pro (Google Maps Tool)",
-        "limits": {
-          "RPD": "500"
-        }
-      },
-      {
-        "model_id": "Gemini 2.5 Computer Use Preview (Google Search Tool)",
+        "model_id": "Gemini 2.5 Computer Use Preview",
         "limits": {}
       },
       {
-        "model_id": "Gemini 2.5 Computer Use Preview (Google Maps Tool)",
+        "model_id": "Gemma 3",
         "limits": {}
       },
       {
-        "model_id": "Gemini 3 Pro Preview (Google Search Tool)",
-        "limits": {
-          "RPD": "1500"
-        }
-      },
-      {
-        "model_id": "Gemini 3 Pro Preview (Google Maps Tool)",
-        "limits": {
-          "RPD": "10000"
-        }
-      },
-      {
-        "model_id": "Gemini 2.5 Flash-Lite (Code execution Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash-Lite (URL context Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash (Code execution Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash (URL context Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Pro (Code execution Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Pro (URL context Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 3 Pro Preview (Code execution Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 3 Pro Preview (URL context Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash-Lite (File search Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash (File search Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Pro (File search Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 3 Pro Preview (File search Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 3 Pro (Image generation Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 3 Flash (Image generation Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash-Lite (Image generation Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash (Image generation Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Pro (Image generation Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 3 Pro Preview (Image generation Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash-Lite (Video generation Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash (Video generation Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Pro (Video generation Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 3 Pro Preview (Video generation Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash-Lite (Audio generation Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash (Audio generation Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Pro (Audio generation Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 3 Pro Preview (Audio generation Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Flash Preview TTS (Audio generation Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini 2.5 Pro Preview TTS (Audio generation Tool)",
-        "limits": {}
-      },
-      {
-        "model_id": "Gemini Deep Research Agent",
+        "model_id": "Gemma 3n",
         "limits": {}
       }
     ],
     "id": "google-ai-studio",
     "type": "Free",
-    "notes": "Free of charge with generous limits for developers and small projects. Content used to improve Google products.",
-    "lastUpdated": "2026-02-18T09:35:39.345Z"
+    "notes": "Generous limits for free tier, scale up with pay-as-you-go pricing.",
+    "lastUpdated": "2026-02-18T09:37:22.835Z"
   },
   {
     "name": "Gemini 2.5 Flash",
@@ -580,226 +350,33 @@
   {
     "name": "Cerebras",
     "url": "https://cerebras.ai/pricing",
-    "limits": "Access to all Cerebras powered models with community support.",
+    "limits": "Access to all Cerebras powered models with community support via Discord.",
     "models": [
       {
         "model_id": "All Models",
-        "limits": {}
+        "limits": {
+          "RPM": "unspecified",
+          "RPD": "unspecified",
+          "TPM": "unspecified",
+          "TPD": "unspecified",
+          "context_window": "unspecified"
+        }
       }
     ],
     "id": "cerebras",
     "type": "Free",
-    "notes": "Access to all Cerebras powered models with community support.",
-    "lastUpdated": "2026-02-18T09:35:40.552Z"
+    "notes": "Access to all Cerebras powered models with community support via Discord.",
+    "lastUpdated": "2026-02-18T09:37:24.144Z"
   },
   {
     "name": "Groq",
     "url": "https://console.groq.com/docs/rate-limits",
-    "limits": "Free tier limits are not explicitly detailed, but the table below shows limits for the 'Developer Plan Limits' which are likely the most accessible tier. Higher limits are available for enterprise use cases.",
-    "models": [
-      {
-        "model_id": "allam-2-7b",
-        "limits": {
-          "RPD": "7K",
-          "TPM": "6K",
-          "context_window": "N/A"
-        }
-      },
-      {
-        "model_id": "canopylabs/orpheus-arabic-saudi",
-        "limits": {
-          "RPM": "10",
-          "RPD": "100",
-          "TPM": "1.2K",
-          "TPD": "3.6K",
-          "context_window": "N/A"
-        }
-      },
-      {
-        "model_id": "canopylabs/orpheus-v1-english",
-        "limits": {
-          "RPM": "10",
-          "RPD": "100",
-          "TPM": "1.2K",
-          "TPD": "3.6K",
-          "context_window": "N/A"
-        }
-      },
-      {
-        "model_id": "groq/compound",
-        "limits": {
-          "RPM": "30",
-          "RPD": "250",
-          "TPM": "70K",
-          "TPD": "N/A",
-          "context_window": "N/A"
-        }
-      },
-      {
-        "model_id": "groq/compound-mini",
-        "limits": {
-          "RPM": "30",
-          "RPD": "250",
-          "TPM": "70K",
-          "TPD": "N/A",
-          "context_window": "N/A"
-        }
-      },
-      {
-        "model_id": "llama-3.1-8b-instant",
-        "limits": {
-          "RPM": "30",
-          "RPD": "14.4K",
-          "TPM": "6K",
-          "TPD": "500K",
-          "context_window": "N/A"
-        }
-      },
-      {
-        "model_id": "llama-3.3-70b-versatile",
-        "limits": {
-          "RPM": "30",
-          "RPD": "1K",
-          "TPM": "12K",
-          "TPD": "100K",
-          "context_window": "N/A"
-        }
-      },
-      {
-        "model_id": "meta-llama/llama-4-maverick-17b-128e-instruct",
-        "limits": {
-          "RPM": "30",
-          "RPD": "1K",
-          "TPM": "6K",
-          "TPD": "500K",
-          "context_window": "N/A"
-        }
-      },
-      {
-        "model_id": "meta-llama/llama-4-scout-17b-16e-instruct",
-        "limits": {
-          "RPM": "30",
-          "RPD": "1K",
-          "TPM": "30K",
-          "TPD": "500K",
-          "context_window": "N/A"
-        }
-      },
-      {
-        "model_id": "meta-llama/llama-guard-4-12b",
-        "limits": {
-          "RPM": "30",
-          "RPD": "14.4K",
-          "TPM": "15K",
-          "TPD": "500K",
-          "context_window": "N/A"
-        }
-      },
-      {
-        "model_id": "meta-llama/llama-prompt-guard-2-22m",
-        "limits": {
-          "RPM": "30",
-          "RPD": "14.4K",
-          "TPM": "15K",
-          "TPD": "500K",
-          "context_window": "N/A"
-        }
-      },
-      {
-        "model_id": "meta-llama/llama-prompt-guard-2-86m",
-        "limits": {
-          "RPM": "30",
-          "RPD": "14.4K",
-          "TPM": "15K",
-          "TPD": "500K",
-          "context_window": "N/A"
-        }
-      },
-      {
-        "model_id": "moonshotai/kimi-k2-instruct",
-        "limits": {
-          "RPM": "60",
-          "RPD": "1K",
-          "TPM": "10K",
-          "TPD": "300K",
-          "context_window": "N/A"
-        }
-      },
-      {
-        "model_id": "moonshotai/kimi-k2-instruct-0905",
-        "limits": {
-          "RPM": "60",
-          "RPD": "1K",
-          "TPM": "10K",
-          "TPD": "300K",
-          "context_window": "N/A"
-        }
-      },
-      {
-        "model_id": "openai/gpt-oss-120b",
-        "limits": {
-          "RPM": "30",
-          "RPD": "1K",
-          "TPM": "8K",
-          "TPD": "200K",
-          "context_window": "N/A"
-        }
-      },
-      {
-        "model_id": "openai/gpt-oss-20b",
-        "limits": {
-          "RPM": "30",
-          "RPD": "1K",
-          "TPM": "8K",
-          "TPD": "200K",
-          "context_window": "N/A"
-        }
-      },
-      {
-        "model_id": "openai/gpt-oss-safeguard-20b",
-        "limits": {
-          "RPM": "30",
-          "RPD": "1K",
-          "TPM": "8K",
-          "TPD": "200K",
-          "context_window": "N/A"
-        }
-      },
-      {
-        "model_id": "qwen/qwen3-32b",
-        "limits": {
-          "RPM": "60",
-          "RPD": "1K",
-          "TPM": "6K",
-          "TPD": "500K",
-          "context_window": "N/A"
-        }
-      },
-      {
-        "model_id": "whisper-large-v3",
-        "limits": {
-          "RPM": "20",
-          "RPD": "2K",
-          "TPM": "7.2K",
-          "TPD": "28.8K",
-          "context_window": "N/A"
-        }
-      },
-      {
-        "model_id": "whisper-large-v3-turbo",
-        "limits": {
-          "RPM": "20",
-          "RPD": "2K",
-          "TPM": "7.2K",
-          "TPD": "28.8K",
-          "context_window": "N/A"
-        }
-      }
-    ],
+    "limits": "The documentation indicates that specific rate limits are available on the 'limits page' in account settings, and that the Developer plan offers higher limits than the base free tier. The table provided shows both 'Free Plan Limits' and 'Developer Plan Limits', but only the Developer Plan limits are detailed in the table. Therefore, the free tier limits are not explicitly stated in this document.",
+    "models": [],
     "id": "groq",
     "type": "Free",
-    "notes": "Free tier limits are not explicitly detailed, but the table below shows limits for the 'Developer Plan Limits' which are likely the most accessible tier. Higher limits are available for enterprise use cases.",
-    "lastUpdated": "2026-02-18T09:35:28.829Z"
+    "notes": "The documentation indicates that specific rate limits are available on the 'limits page' in account settings, and that the Developer plan offers higher limits than the base free tier. The table provided shows both 'Free Plan Limits' and 'Developer Plan Limits', but only the Developer Plan limits are detailed in the table. Therefore, the free tier limits are not explicitly stated in this document.",
+    "lastUpdated": "2026-02-18T09:37:17.241Z"
   },
   {
     "name": "Cohere",
@@ -1493,9 +1070,9 @@
     "name": "Mistral AI",
     "url": "https://mistral.ai/technology/#pricing",
     "type": "Free",
-    "notes": "No specific free tier limits were found in the provided documentation. The documentation focuses on Mistral Studio's capabilities and deployment options rather than free tier API access.",
-    "limits": "No specific free tier limits were found in the provided documentation. The documentation focuses on Mistral Studio's capabilities and deployment options rather than free tier API access.",
+    "notes": "No specific free tier limits are detailed in the provided documentation. Pricing information is available via a link.",
+    "limits": "No specific free tier limits are detailed in the provided documentation. Pricing information is available via a link.",
     "models": [],
-    "lastUpdated": "2026-02-18T09:35:49.654Z"
+    "lastUpdated": "2026-02-18T09:37:26.657Z"
   }
 ]
