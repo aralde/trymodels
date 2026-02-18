@@ -169,8 +169,8 @@
         "limits": {
           "RPM": 20,
           "RPD": 2000,
-          "TPM": "",
-          "TPD": 7200
+          "TPM": 7200,
+          "TPD": 28800
         }
       },
       {
@@ -178,12 +178,12 @@
         "limits": {
           "RPM": 20,
           "RPD": 2000,
-          "TPM": "",
-          "TPD": 7200
+          "TPM": 7200,
+          "TPD": 28800
         }
       }
     ],
-    "notes": "Free Plan limits are listed. Higher limits available on Developer Plan."
+    "notes": "Free plan limits are listed. Developer plan offers higher limits."
   },
   {
     "name": "Google AI Studio",
@@ -261,7 +261,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-flash-native-audio",
+        "model_id": "gemini-2.5-flash-native-audio-live-api",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -394,15 +394,270 @@
           "TPM": "",
           "TPD": ""
         }
-      }
-    ],
-    "notes": "Free of charge usage with specific models. Grounding limits are not included in RPM/RPD/TPM/TPD."
-  },
-  {
-    "name": "Cerebras",
-    "models": [
+      },
       {
-        "model_id": "All Cerebras powered models",
+        "model_id": "gemini-3-pro",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-3-flash",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-pro-preview",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-flash-lite-preview-tts",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-pro-preview-tts",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-pro-tts",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-flash-tts",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-pro-chat",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-flash-chat",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-flash-lite-chat",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-flash-lite-chat-preview",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-flash-chat-preview",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-pro-chat-preview",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-pro-computer-use-preview",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-robotics-er-1.5-chat-preview",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-embedding-004",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-embedding-preview",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-3-flash-image-preview",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-flash-image-preview",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-3-pro-preview-image",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-flash-tts-preview",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-pro-tts-preview",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-flash-lite-tts-preview",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-flash-lite-audio-preview",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-flash-audio-preview",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-pro-audio-preview",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-flash-image-tts-preview",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-pro-image-tts-preview",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-3-pro-image-tts-preview",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "gemini-2.5-flash-lite-image-tts-preview",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -411,7 +666,7 @@
         }
       }
     ],
-    "notes": "Free tier offers access to all models with community support. Developer tier has 10x higher rate limits."
+    "context_window": "N/A"
   },
   {
     "name": "OpenRouter",
@@ -651,39 +906,8 @@
         }
       }
     ],
-    "notes": "Free tier: 26 models available with :free suffix. RPM: 20. RPD varies by credits."
-  },
-  {
-    "name": "Mistral AI",
-    "models": [
-      {
-        "model_id": "Mistral Large 3",
-        "limits": {
-          "RPM": "",
-          "RPD": "",
-          "TPM": "",
-          "TPD": ""
-        }
-      },
-      {
-        "model_id": "Mistral Medium 3",
-        "limits": {
-          "RPM": "",
-          "RPD": "",
-          "TPM": "",
-          "TPD": ""
-        }
-      },
-      {
-        "model_id": "Ministral 3 Family",
-        "limits": {
-          "RPM": "",
-          "RPD": "",
-          "TPM": "",
-          "TPD": ""
-        }
-      }
-    ],
-    "notes": "Focus is on Studio capabilities. Specific free tier limits for individual models are not explicitly detailed but are implied to be part of a trial or introductory offering. Documentation points to 'Try Studio' and 'Explore flexible pricing options'."
+    "notes": "Free tier: 26 models available with :free suffix. RPM: 20. RPD varies by credits.",
+    "context_window": "N/A (Varies by model)",
+    "link_url": "https://openrouter.ai/"
   }
 ]
