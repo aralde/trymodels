@@ -1344,9 +1344,9 @@
     "name": "Mistral AI",
     "url": "https://mistral.ai/technology/#pricing",
     "type": "Free",
-    "notes": "No specific free tier limits were found in the provided documentation. The documentation focuses on deployment options and features rather than free tier usage restrictions. It directs users to a 'Pricing' page for details, which was not accessible through the provided content.",
-    "limits": "No specific free tier limits were found in the provided documentation. The documentation focuses on deployment options and features rather than free tier usage restrictions. It directs users to a 'Pricing' page for details, which was not accessible through the provided content.",
+    "notes": "The provided documentation does not specify free tier limits. It focuses on product features and deployment options rather than detailed pricing or free tier restrictions. To get this information, please refer to the Mistral AI pricing page or contact their sales team.",
+    "limits": "The provided documentation does not specify free tier limits. It focuses on product features and deployment options rather than detailed pricing or free tier restrictions. To get this information, please refer to the Mistral AI pricing page or contact their sales team.",
     "models": [],
-    "lastUpdated": "2026-02-18T10:00:02.466Z"
+    "lastUpdated": "2026-02-18T10:05:10.071Z"
   }
 ]
