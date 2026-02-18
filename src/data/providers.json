@@ -179,17 +179,17 @@
           "RPM": 20,
           "RPD": 2000,
           "TPM": "",
-          "TPD": 28800
+          "TPD": 7200
         }
       }
     ],
-    "notes": "Free plan limits are listed. Higher limits are available on paid plans."
+    "notes": "Free Plan limits are listed. Higher limits available on Developer Plan."
   },
   {
     "name": "Google AI Studio",
     "models": [
       {
-        "model_id": "gemini-3-pro",
+        "model_id": "gemini-3-pro-preview",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -198,7 +198,7 @@
         }
       },
       {
-        "model_id": "gemini-3-flash",
+        "model_id": "gemini-3-flash-preview",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -207,7 +207,7 @@
         }
       },
       {
-        "model_id": "gemini-3-pro-image",
+        "model_id": "gemini-3-pro-image-preview",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -396,7 +396,7 @@
         }
       }
     ],
-    "notes": "Free tier provides free input & output tokens, Google AI Studio access, and data usage for product improvement. Specific RPM/RPD/TPM/TPD are not explicitly listed for most models in the free tier."
+    "notes": "Free of charge usage with specific models. Grounding limits are not included in RPM/RPD/TPM/TPD."
   },
   {
     "name": "Cerebras",
@@ -411,7 +411,7 @@
         }
       }
     ],
-    "notes": "Free tier offers access to all Cerebras powered models with community support. No specific rate limits are provided for the free tier."
+    "notes": "Free tier offers access to all models with community support. Developer tier has 10x higher rate limits."
   },
   {
     "name": "OpenRouter",
@@ -684,6 +684,6 @@
         }
       }
     ],
-    "notes": "Mistral AI Studio offers a platform with various models. Specific free tier limits for individual models are not detailed, but imply trial or development access."
+    "notes": "Focus is on Studio capabilities. Specific free tier limits for individual models are not explicitly detailed but are implied to be part of a trial or introductory offering. Documentation points to 'Try Studio' and 'Explore flexible pricing options'."
   }
 ]
