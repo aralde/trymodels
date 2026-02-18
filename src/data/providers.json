@@ -35,7 +35,7 @@
           "RPM": 30,
           "RPD": 250,
           "TPM": 70000,
-          "TPD": 0
+          "TPD": ""
         }
       },
       {
@@ -44,7 +44,7 @@
           "RPM": 30,
           "RPD": 250,
           "TPM": 70000,
-          "TPD": 0
+          "TPD": ""
         }
       },
       {
@@ -169,7 +169,7 @@
         "limits": {
           "RPM": 20,
           "RPD": 2000,
-          "TPM": 0,
+          "TPM": "",
           "TPD": 7200
         }
       },
@@ -178,227 +178,225 @@
         "limits": {
           "RPM": 20,
           "RPD": 2000,
-          "TPM": 0,
-          "TPD": 7200
+          "TPM": "",
+          "TPD": 28800
         }
       }
     ],
-    "notes": "Free plan limits are applied per organization and vary by model. Higher limits are available with paid plans. The focus is on enterprise solutions and deployment options. Specific numerical rate limits are not provided for the free tier. Free tier usage is available for developers and small projects. Limits for specific models are not explicitly listed as RPM/RPD/TPM/TPD but rather 'Free of charge' for input/output tokens. Free tier limits for models ending in ':free'. Daily limits depend on purchased credits: 50 RPD for less than 10 credits, 1000 RPD for 10 or more credits. Specific free tier rate limits (RPM, RPD, TPM, TPD) are not explicitly detailed in the provided documentation. The focus is on enterprise solutions and deployment options. Free tier provides access to all Cerebras powered models with community support. Specific numerical rate limits are not provided for the free tier. Free tier limits for models ending in ':free'. Daily limits depend on purchased credits: 50 RPD for less than 10 credits, 1000 RPD for 10 or more credits."
+    "notes": "Free plan limits are listed. Higher limits are available on paid plans."
   },
   {
     "name": "Google AI Studio",
     "models": [
       {
-        "model_id": "gemini-3-pro-preview",
+        "model_id": "gemini-3-pro",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
-        "model_id": "gemini-3-flash-preview",
+        "model_id": "gemini-3-flash",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
-        "model_id": "gemini-3-pro-image-preview",
+        "model_id": "gemini-3-pro-image",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
         "model_id": "gemini-2.5-pro",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
         "model_id": "gemini-2.5-flash",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
         "model_id": "gemini-2.5-flash-preview",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
         "model_id": "gemini-2.5-flash-lite",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
         "model_id": "gemini-2.5-flash-lite-preview",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
         "model_id": "gemini-2.5-flash-native-audio",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
         "model_id": "gemini-2.5-flash-image",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
         "model_id": "gemini-2.5-flash-preview-tts",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
         "model_id": "gemini-2.5-pro-preview-tts",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
         "model_id": "gemini-2.0-flash",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
         "model_id": "gemini-2.0-flash-lite",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
         "model_id": "imagen-4",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
         "model_id": "veo-3.1",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
         "model_id": "veo-3",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
         "model_id": "veo-2",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
         "model_id": "gemini-embedding",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
         "model_id": "gemini-robotics-er-1.5-preview",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
         "model_id": "gemini-2.5-computer-use-preview",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
         "model_id": "gemma-3",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       },
       {
         "model_id": "gemma-3n",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       }
     ],
-    "notes": "Free tier usage is available for developers and small projects. Limits for specific models are not explicitly listed as RPM/RPD/TPM/TPD but rather 'Free of charge' for input/output tokens.",
-    "context_window": "1M (for some models)",
-    "link_url": "https://ai.google.dev/pricing"
+    "notes": "Free tier provides free input & output tokens, Google AI Studio access, and data usage for product improvement. Specific RPM/RPD/TPM/TPD are not explicitly listed for most models in the free tier."
   },
   {
     "name": "Cerebras",
@@ -406,14 +404,14 @@
       {
         "model_id": "All Cerebras powered models",
         "limits": {
-          "RPM": 0,
-          "RPD": 0,
-          "TPM": 0,
-          "TPD": 0
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
         }
       }
     ],
-    "notes": "The free tier provides access to all Cerebras powered models with community support. Specific numerical rate limits are not provided for the free tier. The focus is on enterprise solutions and deployment options. Specific numerical rate limits are not provided for the free tier. Free tier usage is available for developers and small projects. Limits for specific models are not explicitly listed as RPM/RPD/TPM/TPD but rather 'Free of charge' for input/output tokens. Free tier limits for models ending in ':free'. Daily limits depend on purchased credits: 50 RPD for less than 10 credits, 1000 RPD for 10 or more credits."
+    "notes": "Free tier offers access to all Cerebras powered models with community support. No specific rate limits are provided for the free tier."
   },
   {
     "name": "OpenRouter",
@@ -657,7 +655,35 @@
   },
   {
     "name": "Mistral AI",
-    "models": [],
-    "notes": "Specific free tier rate limits (RPM, RPD, TPM, TPD) are not explicitly detailed in the provided documentation. The focus is on enterprise solutions and deployment options. The focus is on enterprise solutions and deployment options. Specific numerical rate limits are not provided for the free tier. Free tier usage is available for developers and small projects. Limits for specific models are not explicitly listed as RPM/RPD/TPM/TPD but rather 'Free of charge' for input/output tokens. Free tier limits for models ending in ':free'. Daily limits depend on purchased credits: 50 RPD for less than 10 credits, 1000 RPD for 10 or more credits."
+    "models": [
+      {
+        "model_id": "Mistral Large 3",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "Mistral Medium 3",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "Ministral 3 Family",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      }
+    ],
+    "notes": "Mistral AI Studio offers a platform with various models. Specific free tier limits for individual models are not detailed, but imply trial or development access."
   }
 ]
