@@ -183,15 +183,13 @@
         }
       }
     ],
-    "notes": "Free plan limits are listed. Higher limits available for Developer plan.",
-    "context_window": "N/A",
-    "link_url": "https://console.groq.com/docs/rate-limits"
+    "notes": "Free plan limits are listed per model. Developer plan offers higher limits."
   },
   {
     "name": "Google AI Studio",
     "models": [
       {
-        "model_id": "gemini-3-pro-preview",
+        "model_id": "Gemini 3 Pro Preview",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -200,7 +198,7 @@
         }
       },
       {
-        "model_id": "gemini-3-flash-preview",
+        "model_id": "Gemini 3 Flash Preview",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -209,7 +207,7 @@
         }
       },
       {
-        "model_id": "gemini-3-pro-image-preview",
+        "model_id": "Gemini 2.5 Pro",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -218,7 +216,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-pro",
+        "model_id": "Gemini 2.5 Flash",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -227,7 +225,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-flash",
+        "model_id": "Gemini 2.5 Flash Preview",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -236,7 +234,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-flash-preview",
+        "model_id": "Gemini 2.5 Flash-Lite",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -245,7 +243,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-flash-lite",
+        "model_id": "Gemini 2.5 Flash-Lite Preview",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -254,7 +252,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-flash-lite-preview",
+        "model_id": "Gemini 2.0 Flash",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -263,7 +261,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-flash-native-audio-live-api",
+        "model_id": "Gemini 2.0 Flash-Lite",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -272,7 +270,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-flash-image-preview",
+        "model_id": "Gemini Robotics-ER 1.5 Preview",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -281,7 +279,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-flash-preview-tts",
+        "model_id": "Gemma 3",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -290,7 +288,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-pro-preview-tts",
+        "model_id": "Gemma 3n",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -299,7 +297,7 @@
         }
       },
       {
-        "model_id": "gemini-2.0-flash",
+        "model_id": "Gemini 2.5 Pro (Image)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -308,7 +306,7 @@
         }
       },
       {
-        "model_id": "gemini-2.0-flash-lite",
+        "model_id": "Gemini 2.5 Flash (Image)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -317,7 +315,7 @@
         }
       },
       {
-        "model_id": "imagen-4",
+        "model_id": "Gemini 2.5 Flash-Lite (Audio)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -326,7 +324,7 @@
         }
       },
       {
-        "model_id": "veo-3.1",
+        "model_id": "Gemini 2.5 Pro (TTS)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -335,7 +333,7 @@
         }
       },
       {
-        "model_id": "veo-3",
+        "model_id": "Gemini 2.5 Flash (TTS)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -344,7 +342,7 @@
         }
       },
       {
-        "model_id": "veo-2",
+        "model_id": "Gemini 2.5 Computer Use Preview",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -353,7 +351,7 @@
         }
       },
       {
-        "model_id": "gemini-embedding",
+        "model_id": "Gemini Embedding",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -362,7 +360,7 @@
         }
       },
       {
-        "model_id": "gemini-robotics-er-1.5-preview",
+        "model_id": "Gemini 2.5 Flash Native Audio",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -371,7 +369,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-computer-use-preview",
+        "model_id": "Gemini 2.5 Pro (with 1M context window)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -380,7 +378,7 @@
         }
       },
       {
-        "model_id": "gemma-3",
+        "model_id": "Gemini 2.5 Flash (with 1M context window)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -389,7 +387,7 @@
         }
       },
       {
-        "model_id": "gemma-3n",
+        "model_id": "Gemini 2.5 Flash-Lite (with 1M context window)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -398,61 +396,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-pro (with Google Search tool)",
-        "limits": {
-          "RPM": "",
-          "RPD": 1500,
-          "TPM": "",
-          "TPD": ""
-        }
-      },
-      {
-        "model_id": "gemini-2.5-flash (with Google Search tool)",
-        "limits": {
-          "RPM": "",
-          "RPD": 500,
-          "TPM": "",
-          "TPD": ""
-        }
-      },
-      {
-        "model_id": "gemini-2.5-flash-lite (with Google Search tool)",
-        "limits": {
-          "RPM": "",
-          "RPD": 500,
-          "TPM": "",
-          "TPD": ""
-        }
-      },
-      {
-        "model_id": "gemini-robotics-er-1.5-preview (with Google Search tool)",
-        "limits": {
-          "RPM": "",
-          "RPD": 500,
-          "TPM": "",
-          "TPD": ""
-        }
-      },
-      {
-        "model_id": "gemini-2.5-pro (with Google Maps tool)",
-        "limits": {
-          "RPM": "",
-          "RPD": 10000,
-          "TPM": "",
-          "TPD": ""
-        }
-      },
-      {
-        "model_id": "gemini-2.5-flash-lite (with Google Maps tool)",
-        "limits": {
-          "RPM": "",
-          "RPD": 500,
-          "TPM": "",
-          "TPD": ""
-        }
-      },
-      {
-        "model_id": "gemini-2.5-pro (with Code Execution tool)",
+        "model_id": "Gemini 2.5 Pro (Flash-Lite RPD shared)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -461,7 +405,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-pro (with URL context tool)",
+        "model_id": "Gemini 2.5 Flash-Lite (Flash RPD shared)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -470,7 +414,7 @@
         }
       },
       {
-        "model_id": "gemini-embedding",
+        "model_id": "Gemini 2.5 Flash (Flash-Lite RPD shared)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -479,7 +423,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-computer-use-preview",
+        "model_id": "Gemini 2.5 Flash-Lite (Flash RPD shared)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -488,7 +432,7 @@
         }
       },
       {
-        "model_id": "gemini-3-pro",
+        "model_id": "Gemini 2.5 Flash (Flash RPD shared)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -497,7 +441,7 @@
         }
       },
       {
-        "model_id": "gemini-3-flash",
+        "model_id": "Gemini 2.5 Flash-Lite (Flash RPD shared)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -506,7 +450,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-pro (for multimodal understanding)",
+        "model_id": "Gemini 2.5 Pro (Image)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -515,7 +459,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-flash (for speed and efficiency)",
+        "model_id": "Gemini 2.5 Flash (Image)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -524,7 +468,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-flash-lite (for cost-effectiveness)",
+        "model_id": "Gemini 2.5 Pro (Multimodal)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -533,7 +477,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-flash-native-audio-live-api",
+        "model_id": "Gemini 2.5 Flash (Multimodal)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -542,7 +486,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-flash-image-preview",
+        "model_id": "Gemini 2.5 Flash-Lite (Multimodal)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -551,7 +495,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-flash-preview-tts",
+        "model_id": "Gemini 2.5 Pro (Cost-effective)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -560,7 +504,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-pro-preview-tts",
+        "model_id": "Gemini 2.5 Flash-Lite (Cost-effective)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -569,7 +513,7 @@
         }
       },
       {
-        "model_id": "gemini-2.0-flash",
+        "model_id": "Gemini 2.5 Pro (Audio Models)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -578,7 +522,7 @@
         }
       },
       {
-        "model_id": "gemini-2.0-flash-lite",
+        "model_id": "Gemini 2.5 Flash (Image Generation)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -587,7 +531,7 @@
         }
       },
       {
-        "model_id": "imagen-4",
+        "model_id": "Gemini 2.5 Pro (TTS)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -596,7 +540,7 @@
         }
       },
       {
-        "model_id": "veo-3.1",
+        "model_id": "Gemini 2.5 Flash (TTS)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -605,7 +549,7 @@
         }
       },
       {
-        "model_id": "veo-3",
+        "model_id": "Gemini 2.5 Pro (TTS)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -614,7 +558,7 @@
         }
       },
       {
-        "model_id": "veo-2",
+        "model_id": "Gemini 2.5 Pro (Multimodal, 1M context)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -623,7 +567,7 @@
         }
       },
       {
-        "model_id": "gemini-embedding",
+        "model_id": "Gemini 2.5 Flash (Multimodal, 1M context)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -632,7 +576,7 @@
         }
       },
       {
-        "model_id": "gemini-robotics-er-1.5-preview",
+        "model_id": "Gemini 2.5 Flash-Lite (Multimodal, 1M context)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -641,7 +585,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-computer-use-preview",
+        "model_id": "Gemini 2.5 Pro (Cost-effective)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -650,7 +594,7 @@
         }
       },
       {
-        "model_id": "gemma-3",
+        "model_id": "Gemini 2.5 Flash-Lite (Cost-effective)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -659,7 +603,7 @@
         }
       },
       {
-        "model_id": "gemma-3n",
+        "model_id": "Gemini 2.5 Pro (Image Generation)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -668,61 +612,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-pro (with Grounding with Google Search)",
-        "limits": {
-          "RPM": "",
-          "RPD": 1500,
-          "TPM": "",
-          "TPD": ""
-        }
-      },
-      {
-        "model_id": "gemini-2.5-flash (with Grounding with Google Search)",
-        "limits": {
-          "RPM": "",
-          "RPD": 1500,
-          "TPM": "",
-          "TPD": ""
-        }
-      },
-      {
-        "model_id": "gemini-2.5-flash-lite (with Grounding with Google Search)",
-        "limits": {
-          "RPM": "",
-          "RPD": 500,
-          "TPM": "",
-          "TPD": ""
-        }
-      },
-      {
-        "model_id": "gemini-robotics-er-1.5-preview (with Grounding with Google Search)",
-        "limits": {
-          "RPM": "",
-          "RPD": 500,
-          "TPM": "",
-          "TPD": ""
-        }
-      },
-      {
-        "model_id": "gemini-2.5-pro (with Grounding with Google Maps)",
-        "limits": {
-          "RPM": "",
-          "RPD": 10000,
-          "TPM": "",
-          "TPD": ""
-        }
-      },
-      {
-        "model_id": "gemini-2.5-flash-lite (with Grounding with Google Maps)",
-        "limits": {
-          "RPM": "",
-          "RPD": 500,
-          "TPM": "",
-          "TPD": ""
-        }
-      },
-      {
-        "model_id": "gemini-2.5-pro (with Code execution tool)",
+        "model_id": "Gemini 2.5 Flash (Image Generation)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -731,7 +621,7 @@
         }
       },
       {
-        "model_id": "gemini-2.5-pro (with URL context tool)",
+        "model_id": "Gemini 2.5 Pro (Embeddings)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -740,7 +630,106 @@
         }
       },
       {
-        "model_id": "gemini-2.5-pro (with File search tool)",
+        "model_id": "Gemini 2.5 Flash-Lite (Embeddings)",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "Gemini Robotics-ER (with 1M context)",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "Gemini 2.5 Computer Use Preview",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "Gemini 3",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "Gemini 3n",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "Gemini 2.5 Pro (grounding limits)",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "Gemini 2.5 Flash (grounding limits)",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "Gemini 2.5 Flash-Lite (grounding limits)",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "Gemini 2.5 Pro (Code execution)",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "Gemini 2.5 Pro (URL context)",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "Gemini 2.5 Pro (File search)",
+        "limits": {
+          "RPM": "",
+          "RPD": "",
+          "TPM": "",
+          "TPD": ""
+        }
+      },
+      {
+        "model_id": "Gemini 2.5 Pro (Agent)",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -749,15 +738,13 @@
         }
       }
     ],
-    "notes": "Models listed as 'Free of charge' have no explicit rate limits mentioned for the free tier in this document. Specific tool usage limits are provided.",
-    "context_window": "Up to 1 million tokens (for Gemini 2.5 Pro and Gemini 2.5 Flash-Lite)",
-    "link_url": "https://ai.google.dev/pricing"
+    "notes": "Free of charge usage with generous limits for developers and small projects. Specific RPM/RPD/TPM/TPD are not explicitly listed, only token pricing and some grounding limits."
   },
   {
     "name": "Cerebras",
     "models": [
       {
-        "model_id": "All Cerebras powered models",
+        "model_id": "All Models",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -766,9 +753,7 @@
         }
       }
     ],
-    "notes": "The Free tier offers access to all Cerebras powered models with 'community support'. Specific rate limits (RPM, RPD, TPM, TPD) are not provided.",
-    "context_window": "N/A",
-    "link_url": "https://cerebras.ai/pricing"
+    "notes": "The free tier offers access to all Cerebras powered models with community support. Specific rate limits are not provided, but it mentions 'Generous rate limits for power users' in the Developer tier and 'Highest rate limits for production workloads' in the Enterprise tier."
   },
   {
     "name": "OpenRouter",
@@ -1008,33 +993,13 @@
         }
       }
     ],
-    "notes": "Free tier: 26 models available with :free suffix. RPM: 20. RPD varies by credits.",
-    "context_window": "N/A",
-    "link_url": "https://openrouter.ai/docs/limits"
+    "notes": "Free tier: 26 models available with :free suffix. RPM: 20. RPD varies by credits."
   },
   {
     "name": "Mistral AI",
     "models": [
       {
-        "model_id": "Mistral Large 3",
-        "limits": {
-          "RPM": "",
-          "RPD": "",
-          "TPM": "",
-          "TPD": ""
-        }
-      },
-      {
-        "model_id": "Mistral Medium 3",
-        "limits": {
-          "RPM": "",
-          "RPD": "",
-          "TPM": "",
-          "TPD": ""
-        }
-      },
-      {
-        "model_id": "Ministral 3 Family",
+        "model_id": "All Models",
         "limits": {
           "RPM": "",
           "RPD": "",
@@ -1043,8 +1008,6 @@
         }
       }
     ],
-    "notes": "Mistral AI's documentation focuses on their 'Studio' platform and enterprise solutions. Free tier or trial limits for direct API access are not explicitly detailed for models like Mistral Large, Medium, or Ministral.",
-    "context_window": "N/A",
-    "link_url": "https://mistral.ai/technology/#pricing"
+    "notes": "Mistral AI's pricing page focuses on their Studio platform and does not explicitly detail free tier rate limits for API usage. It mentions trying Studio and talking to sales for enterprise solutions."
   }
 ]
