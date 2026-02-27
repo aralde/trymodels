@@ -1,0 +1,524 @@
+[
+  {
+    "name": "OpenRouter",
+    "models": [
+      {
+        "model_id": "openrouter/aurora-alpha",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 128000
+        }
+      },
+      {
+        "model_id": "stepfun/step-3.5-flash:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 256000
+        }
+      },
+      {
+        "model_id": "arcee-ai/trinity-large-preview:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 131000
+        }
+      },
+      {
+        "model_id": "upstage/solar-pro-3:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 128000
+        }
+      },
+      {
+        "model_id": "liquid/lfm-2.5-1.2b-thinking:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 32768
+        }
+      },
+      {
+        "model_id": "liquid/lfm-2.5-1.2b-instruct:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 32768
+        }
+      },
+      {
+        "model_id": "nvidia/nemotron-3-nano-30b-a3b:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 256000
+        }
+      },
+      {
+        "model_id": "arcee-ai/trinity-mini:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 131072
+        }
+      },
+      {
+        "model_id": "nvidia/nemotron-nano-12b-v2-vl:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 128000
+        }
+      },
+      {
+        "model_id": "qwen/qwen3-vl-30b-a3b-thinking",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 131072
+        }
+      },
+      {
+        "model_id": "qwen/qwen3-vl-235b-a22b-thinking",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 131072
+        }
+      },
+      {
+        "model_id": "qwen/qwen3-next-80b-a3b-instruct:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 262144
+        }
+      },
+      {
+        "model_id": "nvidia/nemotron-nano-9b-v2:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 128000
+        }
+      },
+      {
+        "model_id": "openai/gpt-oss-120b:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 131072
+        }
+      },
+      {
+        "model_id": "openai/gpt-oss-20b:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 131072
+        }
+      },
+      {
+        "model_id": "z-ai/glm-4.5-air:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 131072
+        }
+      },
+      {
+        "model_id": "qwen/qwen3-235b-a22b-thinking-2507",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 131072
+        }
+      },
+      {
+        "model_id": "qwen/qwen3-coder:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 262000
+        }
+      },
+      {
+        "model_id": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 32768
+        }
+      },
+      {
+        "model_id": "google/gemma-3n-e2b-it:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 8192
+        }
+      },
+      {
+        "model_id": "deepseek/deepseek-r1-0528:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 163840
+        }
+      },
+      {
+        "model_id": "google/gemma-3n-e4b-it:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 8192
+        }
+      },
+      {
+        "model_id": "qwen/qwen3-4b:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 40960
+        }
+      },
+      {
+        "model_id": "mistralai/mistral-small-3.1-24b-instruct:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 128000
+        }
+      },
+      {
+        "model_id": "google/gemma-3-4b-it:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 32768
+        }
+      },
+      {
+        "model_id": "google/gemma-3-12b-it:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 32768
+        }
+      },
+      {
+        "model_id": "google/gemma-3-27b-it:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 131072
+        }
+      },
+      {
+        "model_id": "meta-llama/llama-3.3-70b-instruct:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 128000
+        }
+      },
+      {
+        "model_id": "meta-llama/llama-3.2-3b-instruct:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 131072
+        }
+      },
+      {
+        "model_id": "nousresearch/hermes-3-llama-3.1-405b:free",
+        "limits": {
+          "RPM": 20,
+          "RPD": 50,
+          "context_length": 131072
+        }
+      }
+    ],
+    "notes": "Free users have a limit of 50 requests per day and 20 requests per minute (RPM) for free models. Failed attempts count toward the daily quota. Users with at least $10 in credits get 1000 requests/day on free models, with no limits on paid models. OpenRouter does not train on customer data; provider-side retention can be disabled.",
+    "context_window": "N/A (Varies by model)",
+    "link_url": "https://openrouter.ai/"
+  },
+  {
+    "name": "Google AI Studio (Gemini API)",
+    "models": [
+      {
+        "model_id": "Gemini 2.5 Pro (Free Tier)",
+        "limits": {
+          "RPM": 5,
+          "RPD": 100,
+          "TPM": 250000
+        }
+      },
+      {
+        "model_id": "Gemini 2.5 Flash (Free Tier)",
+        "limits": {
+          "RPM": 10,
+          "RPD": 250,
+          "TPM": 250000
+        }
+      },
+      {
+        "model_id": "Gemini 2.5 Flash-Lite (Free Tier)",
+        "limits": {
+          "RPM": 15,
+          "RPD": 1000,
+          "TPM": 250000
+        }
+      },
+      {
+        "model_id": "Gemini 3 Pro Preview (Free Tier)",
+        "limits": {
+          "RPM": 5,
+          "RPD": 100,
+          "TPM": 250000
+        }
+      }
+    ],
+    "notes": "Free tier requires no credit card but has strict limits, which were recently reduced by 50-92% in December 2025. RPD for Flash dropped to 20 from 250. Limits are applied per project. Upgrading to Tier 1 requires linking a paid billing account. Enterprise tiers ensure prompts/responses are not used to improve Google products (data privacy).",
+    "context_window": "Up to 1M tokens",
+    "link_url": "https://ai.google.dev/gemini-api/docs/rate-limits?hl=es-419#"
+  },
+  {
+    "name": "Groq",
+    "models": [
+      {
+        "model_id": "llama3-8b-8192",
+        "limits": {
+          "RPM": 3000,
+          "RPD": 300000,
+          "TPM": 500000
+        }
+      },
+      {
+        "model_id": "llama3-70b-8192",
+        "limits": {
+          "RPM": 1000,
+          "RPD": 100000,
+          "TPM": 200000
+        }
+      },
+      {
+        "model_id": "llama3-70b-32768",
+        "limits": {
+          "RPM": 1000,
+          "RPD": 100000,
+          "TPM": 200000
+        }
+      },
+      {
+        "model_id": "mixtral-8x7b-32768",
+        "limits": {
+          "RPM": 3000,
+          "RPD": 300000,
+          "TPM": 500000
+        }
+      },
+      {
+        "model_id": "mixtral-8x22b-65536",
+        "limits": {
+          "RPM": 500,
+          "RPD": 50000,
+          "TPM": 100000
+        }
+      },
+      {
+        "model_id": "gemma-7b-it",
+        "limits": {
+          "RPM": 3000,
+          "RPD": 300000,
+          "TPM": 500000
+        }
+      },
+      {
+        "model_id": "gemma-2b-it",
+        "limits": {
+          "RPM": 3000,
+          "RPD": 300000,
+          "TPM": 500000
+        }
+      }
+    ],
+    "notes": "The Free Tier is subject to published rate limits (RPM, RPD, TPM, TPD), which apply at the organization level and per model. Exact limits must be checked in the user's GroqConsole under 'Limits'. Upgrading to Developer tier provides higher limits. Cached tokens do not count towards rate limits.",
+    "context_window": "N/A (Varies by model)",
+    "link_url": "https://console.groq.com/docs/rate-limits"
+  },
+  {
+    "name": "Cerebras",
+    "models": [
+      {
+        "model_id": "gpt-oss-120b",
+        "limits": {
+          "RPM": 30,
+          "RPH": 900,
+          "RPD": 14400,
+          "TPM": 60000,
+          "TPH": 1000000,
+          "TPD": 1000000
+        },
+        "notes": "",
+        "context_window": "",
+        "link_url": "https://inference-docs.cerebras.ai/support/rate-limits"
+      },
+      {
+        "model_id": "llama3.1-8b",
+        "limits": {
+          "RPM": 30,
+          "RPH": 900,
+          "RPD": 14400,
+          "TPM": 60000,
+          "TPH": 1000000,
+          "TPD": 1000000
+        },
+        "notes": "",
+        "context_window": "",
+        "link_url": "https://inference-docs.cerebras.ai/support/rate-limits"
+      },
+      {
+        "model_id": "qwen-3-235b-a22b-instruct-2507",
+        "limits": {
+          "RPM": 30,
+          "RPH": 900,
+          "RPD": 14400,
+          "TPM": 60000,
+          "TPH": 1000000,
+          "TPD": 1000000
+        },
+        "notes": "",
+        "context_window": "",
+        "link_url": "https://inference-docs.cerebras.ai/support/rate-limits"
+      },
+      {
+        "model_id": "zai-glm-4.7",
+        "limits": {
+          "RPM": 10,
+          "RPH": 100,
+          "RPD": 100,
+          "TPM": 60000,
+          "TPH": 1000000,
+          "TPD": 1000000
+        },
+        "notes": "",
+        "context_window": "",
+        "link_url": "https://inference-docs.cerebras.ai/support/rate-limits"
+      }
+    ],
+    "notes": "The Free tier offers 1,000,000 tokens per day. Rate limits apply at the organization level. For 'gpt-oss-120b', the Free tier limits are 30 RPM, 60K TPM, 900 RPH, and 14.4K RPD. Data use/privacy policy was not specified in the search results.",
+    "context_window": "Up to 64K for Qwen3 235B Instruct",
+    "link_url": "https://cerebras.ai/"
+  },
+  {
+    "name": "Mistral AI",
+    "models": [
+      {
+        "model_id": "mistral-large-2512",
+        "limits": {
+          "RPM": 60,
+          "RPH": 3600,
+          "RPD": 1000,
+          "TPM": 50000,
+          "TPH": 3000000,
+          "TPD": 133333
+        },
+        "notes": "Belongs to the Standard Group. Shares the 4,000,000 token monthly quota among all models in the group.",
+        "context_window": "256k",
+        "link_url": "https://docs.mistral.ai/deployment/ai-studio/tier"
+      },
+      {
+        "model_id": "codestral-2508",
+        "limits": {
+          "RPM": 60,
+          "RPH": 3600,
+          "RPD": 1000,
+          "TPM": 50000,
+          "TPH": 3000000,
+          "TPD": 133333
+        },
+        "notes": "Optimized for code. Shares the 4M token monthly quota of the Standard Group.",
+        "context_window": "256k",
+        "link_url": "https://docs.mistral.ai/deployment/ai-studio/tier"
+      },
+      {
+        "model_id": "open-mistral-nemo",
+        "limits": {
+          "RPM": 60,
+          "RPH": 3600,
+          "RPD": 2000,
+          "TPM": 50000,
+          "TPH": 3000000,
+          "TPD": 133333
+        },
+        "notes": "Lightweight model. Shares quota with Large and Codestral in the free tier.",
+        "context_window": "128k",
+        "link_url": "https://docs.mistral.ai/deployment/ai-studio/tier"
+      },
+      {
+        "model_id": "mistral-medium-2508",
+        "limits": {
+          "RPM": 25,
+          "RPH": 1500,
+          "RPD": 500,
+          "TPM": 375000,
+          "TPH": 22500000,
+          "TPD": 0
+        },
+        "notes": "Special Group: Interestingly, it has no monthly token limit (unlimited), but it has a lower RPM.",
+        "context_window": "128k",
+        "link_url": "https://docs.mistral.ai/deployment/ai-studio/tier"
+      },
+      {
+        "model_id": "magistral-small-2509",
+        "limits": {
+          "RPM": 10,
+          "RPH": 600,
+          "RPD": 200,
+          "TPM": 20000,
+          "TPH": 1200000,
+          "TPD": 33333333
+        },
+        "notes": "Reasoning model (Chain of Thought). Independent monthly quota of 1 billion tokens.",
+        "context_window": "40k",
+        "link_url": "https://docs.mistral.ai/deployment/ai-studio/tier"
+      },
+      {
+        "model_id": "pixtral-large-2411",
+        "limits": {
+          "RPM": 60,
+          "RPH": 3600,
+          "RPD": 1000,
+          "TPM": 50000,
+          "TPH": 3000000,
+          "TPD": 133333
+        },
+        "notes": "Multimodal model (Vision). Shares the 4M token monthly quota of the Standard Group.",
+        "context_window": "128k",
+        "link_url": "https://docs.mistral.ai/deployment/ai-studio/tier"
+      },
+      {
+        "model_id": "devstral-2512",
+        "limits": {
+          "RPM": 50,
+          "RPH": 3000,
+          "RPD": 500,
+          "TPM": 1000000,
+          "TPH": 60000000,
+          "TPD": 333333
+        },
+        "notes": "For development only. Monthly quota of 10 million tokens. Very high token speed per minute.",
+        "context_window": "256k",
+        "link_url": "https://docs.mistral.ai/deployment/ai-studio/tier"
+      }
+    ],
+    "notes": "The free API tier is intended for evaluation/prototyping. Limits are defined by usage tier and are set at the workspace level. Limits are enforced via Requests per second (RPS) and Tokens per minute/month, rather than RPM/RPD specifically mentioned in the search snippets for the free tier. Data retention is 30 days by default for the free/pro tiers.",
+    "context_window": "Wide 128k context windows available",
+    "link_url": "https://docs.mistral.ai/deployment/ai-studio/tier"
+  }
+]

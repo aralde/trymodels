@@ -1,0 +1,316 @@
+Title: Rate Limits - GroqDocs
+
+URL Source: https://console.groq.com/docs/rate-limits
+
+Markdown Content:
+Rate Limits - GroqDocs
+===============
+
+[![Image 1: Groq](https://console.groq.com/groq-logo.svg)](https://console.groq.com/home)
+
+[Docs](https://console.groq.com/docs/overview)[Login](https://console.groq.com/home)
+
+[Playground](https://console.groq.com/playground)
+
+[API Keys](https://console.groq.com/keys)
+
+[Dashboard](https://console.groq.com/dashboard)
+
+[Docs](https://console.groq.com/docs)
+
+[](https://console.groq.com/settings)
+
+[Log In](https://console.groq.com/login)
+
+Documentation
+-------------
+
+[Docs](https://console.groq.com/docs/overview)[API Reference](https://console.groq.com/docs/api-reference)
+
+Search
+
+Docs
+----
+
+### Getting Started
+
+[Overview](https://console.groq.com/docs/overview)[Quickstart](https://console.groq.com/docs/quickstart)[Models](https://console.groq.com/docs/models)[OpenAI Compatibility](https://console.groq.com/docs/openai)[Responses API](https://console.groq.com/docs/responses-api)[Rate Limits](https://console.groq.com/docs/rate-limits)[Templates](https://console.groq.com/docs/examples)[API Reference](https://console.groq.com/docs/api-reference)
+### Core Features
+
+[Text Generation](https://console.groq.com/docs/text-chat)[Speech to Text](https://console.groq.com/docs/speech-to-text)[Text to Speech](https://console.groq.com/docs/text-to-speech)[Orpheus](https://console.groq.com/docs/text-to-speech/orpheus)[OCR and Image Recognition](https://console.groq.com/docs/vision)[Reasoning](https://console.groq.com/docs/reasoning)[Content Moderation](https://console.groq.com/docs/content-moderation)[Structured Outputs](https://console.groq.com/docs/structured-outputs)[Prompt Caching](https://console.groq.com/docs/prompt-caching)
+### Tools & Integrations
+
+[Tool Use](https://console.groq.com/docs/tool-use/overview)[Overview](https://console.groq.com/docs/tool-use/overview)[Groq Built-In Tools](https://console.groq.com/docs/tool-use/built-in-tools)[Web Search](https://console.groq.com/docs/tool-use/built-in-tools/web-search)[Visit Website](https://console.groq.com/docs/tool-use/built-in-tools/visit-website)[Browser Automation](https://console.groq.com/docs/tool-use/built-in-tools/browser-automation)[Code Execution](https://console.groq.com/docs/tool-use/built-in-tools/code-execution)[Wolfram Alpha](https://console.groq.com/docs/tool-use/built-in-tools/wolfram-alpha)[Browser Search (GPT OSS Models)](https://console.groq.com/docs/tool-use/built-in-tools/browser-search)[Remote Tools and MCP](https://console.groq.com/docs/tool-use/remote-mcp)[Connectors](https://console.groq.com/docs/tool-use/remote-mcp/connectors)[Local Tool Calling](https://console.groq.com/docs/tool-use/local-tool-calling)[Integrations Catalog](https://console.groq.com/docs/integrations)[Coding with Groq](https://console.groq.com/docs/coding-with-groq)[Factory Droid](https://console.groq.com/docs/coding-with-groq/factory-droid)[OpenCode](https://console.groq.com/docs/coding-with-groq/opencode)[Kilo Code](https://console.groq.com/docs/coding-with-groq/kilo-code)[Roo Code](https://console.groq.com/docs/coding-with-groq/roo-code)[Cline](https://console.groq.com/docs/coding-with-groq/cline)
+### Compound (Agentic AI)
+
+[Overview](https://console.groq.com/docs/compound)[Built-In Tools](https://console.groq.com/docs/compound/built-in-tools)[Systems](https://console.groq.com/docs/compound/systems)[Use Cases](https://console.groq.com/docs/compound/use-cases)
+### Guides
+
+[Prompting Guide](https://console.groq.com/docs/prompting)[Basics](https://console.groq.com/docs/prompting)[Patterns](https://console.groq.com/docs/prompting/patterns)[Model Migration](https://console.groq.com/docs/prompting/model-migration)[Assistant Message Prefilling](https://console.groq.com/docs/prefilling)
+### Service Tiers
+
+[Service Tiers](https://console.groq.com/docs/service-tiers)[Performance Tier](https://console.groq.com/docs/performance-tier)[Flex Processing](https://console.groq.com/docs/flex-processing)[Batch Processing](https://console.groq.com/docs/batch)
+### Advanced
+
+[LoRA Inference](https://console.groq.com/docs/lora)
+### Production Readiness
+
+[Production Checklist](https://console.groq.com/docs/production-readiness/production-ready-checklist)[Optimizing Latency](https://console.groq.com/docs/production-readiness/optimizing-latency)[Security Onboarding](https://console.groq.com/docs/production-readiness/security-onboarding)[Prometheus Metrics](https://console.groq.com/docs/prometheus-metrics)
+### Account and Console
+
+[Spend Limits](https://console.groq.com/docs/spend-limits)[Projects](https://console.groq.com/docs/projects)[Model Permissions](https://console.groq.com/docs/model-permissions)[Billing FAQs](https://console.groq.com/docs/billing-faqs)[Your Data](https://console.groq.com/docs/your-data)
+### Developer Resources
+
+[SDK Libraries](https://console.groq.com/docs/libraries)[Groq Badge](https://console.groq.com/docs/badge)[Developer Community](https://community.groq.com/)[OpenBench](https://openbench.dev/)[Error Codes](https://console.groq.com/docs/errors)[Changelog](https://console.groq.com/docs/changelog)
+### Legal
+
+[Policies & Notices](https://console.groq.com/docs/legal)
+
+Search
+
+[Docs](https://console.groq.com/docs/overview)[API Reference](https://console.groq.com/docs/api-reference)
+
+### Getting Started
+
+[Overview](https://console.groq.com/docs/overview)
+
+[Quickstart](https://console.groq.com/docs/quickstart)
+
+[Models](https://console.groq.com/docs/models)
+
+[OpenAI Compatibility](https://console.groq.com/docs/openai)
+
+[Responses API](https://console.groq.com/docs/responses-api)
+
+[Rate Limits](https://console.groq.com/docs/rate-limits)
+
+[Templates](https://console.groq.com/docs/examples)
+
+[API Reference](https://console.groq.com/docs/api-reference)
+
+### Core Features
+
+[Text Generation](https://console.groq.com/docs/text-chat)
+
+[Speech to Text](https://console.groq.com/docs/speech-to-text)
+
+[Text to Speech](https://console.groq.com/docs/text-to-speech)
+
+[Orpheus](https://console.groq.com/docs/text-to-speech/orpheus)
+
+[OCR and Image Recognition](https://console.groq.com/docs/vision)
+
+[Reasoning](https://console.groq.com/docs/reasoning)
+
+[Content Moderation](https://console.groq.com/docs/content-moderation)
+
+[Structured Outputs](https://console.groq.com/docs/structured-outputs)
+
+[Prompt Caching](https://console.groq.com/docs/prompt-caching)
+
+### Tools & Integrations
+
+[Tool Use](https://console.groq.com/docs/tool-use/overview)
+
+[Overview](https://console.groq.com/docs/tool-use/overview)
+
+[Groq Built-In Tools](https://console.groq.com/docs/tool-use/built-in-tools)
+
+[Web Search](https://console.groq.com/docs/tool-use/built-in-tools/web-search)
+
+[Visit Website](https://console.groq.com/docs/tool-use/built-in-tools/visit-website)
+
+[Browser Automation](https://console.groq.com/docs/tool-use/built-in-tools/browser-automation)
+
+[Code Execution](https://console.groq.com/docs/tool-use/built-in-tools/code-execution)
+
+[Wolfram Alpha](https://console.groq.com/docs/tool-use/built-in-tools/wolfram-alpha)
+
+[Browser Search (GPT OSS Models)](https://console.groq.com/docs/tool-use/built-in-tools/browser-search)
+
+[Remote Tools and MCP](https://console.groq.com/docs/tool-use/remote-mcp)
+
+[Connectors](https://console.groq.com/docs/tool-use/remote-mcp/connectors)
+
+[Local Tool Calling](https://console.groq.com/docs/tool-use/local-tool-calling)
+
+[Integrations Catalog](https://console.groq.com/docs/integrations)
+
+[Coding with Groq](https://console.groq.com/docs/coding-with-groq)
+
+[Factory Droid](https://console.groq.com/docs/coding-with-groq/factory-droid)
+
+[OpenCode](https://console.groq.com/docs/coding-with-groq/opencode)
+
+[Kilo Code](https://console.groq.com/docs/coding-with-groq/kilo-code)
+
+[Roo Code](https://console.groq.com/docs/coding-with-groq/roo-code)
+
+[Cline](https://console.groq.com/docs/coding-with-groq/cline)
+
+### Compound (Agentic AI)
+
+[Overview](https://console.groq.com/docs/compound)
+
+[Built-In Tools](https://console.groq.com/docs/compound/built-in-tools)
+
+[Systems](https://console.groq.com/docs/compound/systems)
+
+[Use Cases](https://console.groq.com/docs/compound/use-cases)
+
+### Guides
+
+[Prompting Guide](https://console.groq.com/docs/prompting)
+
+[Basics](https://console.groq.com/docs/prompting)
+
+[Patterns](https://console.groq.com/docs/prompting/patterns)
+
+[Model Migration](https://console.groq.com/docs/prompting/model-migration)
+
+[Assistant Message Prefilling](https://console.groq.com/docs/prefilling)
+
+### Service Tiers
+
+[Service Tiers](https://console.groq.com/docs/service-tiers)
+
+[Performance Tier](https://console.groq.com/docs/performance-tier)
+
+[Flex Processing](https://console.groq.com/docs/flex-processing)
+
+[Batch Processing](https://console.groq.com/docs/batch)
+
+### Advanced
+
+[LoRA Inference](https://console.groq.com/docs/lora)
+
+### Production Readiness
+
+[Production Checklist](https://console.groq.com/docs/production-readiness/production-ready-checklist)
+
+[Optimizing Latency](https://console.groq.com/docs/production-readiness/optimizing-latency)
+
+[Security Onboarding](https://console.groq.com/docs/production-readiness/security-onboarding)
+
+[Prometheus Metrics](https://console.groq.com/docs/prometheus-metrics)
+
+### Account and Console
+
+[Spend Limits](https://console.groq.com/docs/spend-limits)
+
+[Projects](https://console.groq.com/docs/projects)
+
+[Model Permissions](https://console.groq.com/docs/model-permissions)
+
+[Billing FAQs](https://console.groq.com/docs/billing-faqs)
+
+[Your Data](https://console.groq.com/docs/your-data)
+
+### Developer Resources
+
+[SDK Libraries](https://console.groq.com/docs/libraries)
+
+[Groq Badge](https://console.groq.com/docs/badge)
+
+[Developer Community](https://community.groq.com/)
+
+[OpenBench](https://openbench.dev/)
+
+[Error Codes](https://console.groq.com/docs/errors)
+
+[Changelog](https://console.groq.com/docs/changelog)
+
+### Legal
+
+[Policies & Notices](https://console.groq.com/docs/legal)
+
+Rate Limits
+===========
+
+Copy page
+
+Rate limits act as control measures to regulate how frequently users and applications can access our API within specified timeframes. These limits help ensure service stability, fair access, and protection against misuse so that we can serve reliable and fast inference for all.
+
+[Understanding Rate Limits](https://console.groq.com/docs/rate-limits#understanding-rate-limits)
+------------------------------------------------------------------------------------------------
+
+Rate limits are measured in:
+
+*   **RPM:** Requests per minute
+*   **RPD:** Requests per day
+*   **TPM:** Tokens per minute
+*   **TPD:** Tokens per day
+*   **ASH:** Audio seconds per hour
+*   **ASD:** Audio seconds per day
+
+[Cached tokens](https://console.groq.com/docs/prompt-caching) do not count towards your rate limits.
+
+Rate limits apply at the organization level, not individual users. You can hit any limit type depending on which threshold you reach first.
+
+**Example:** Let's say your RPM = 50 and your TPM = 200K. If you were to send 50 requests with only 100 tokens within a minute, you would reach your limit even though you did not send 200K tokens within those 50 requests.
+
+[Rate Limits](https://console.groq.com/docs/rate-limits#rate-limits)
+--------------------------------------------------------------------
+
+The following is a high level summary and there may be exceptions to these limits. You can view the current, exact rate limits for your organization on the [limits page](https://console.groq.com/settings/limits) in your account settings.
+
+**Need higher rate limits?**Upgrade to [Developer plan](https://console.groq.com/settings/billing/plans) to access higher limits, [Batch](https://console.groq.com/docs/batch) and[Flex](https://console.groq.com/docs/flex-processing) processing, and more. Note that the limits shown below are the base limits for the Developer plan, and higher limits are available for select workloads and enterprise use cases.
+
+| * Free Plan Limits * Developer Plan Limits |  |
+| --- | --- |
+| MODEL ID | RPM | RPD | TPM | TPD | ASH | ASD |
+
+allam-2-7b 30 7K 6K 500K--
+canopylabs/orpheus-arabic-saudi 10 100 1.2K 3.6K--
+canopylabs/orpheus-v1-english 10 100 1.2K 3.6K--
+groq/compound 30 250 70K---
+groq/compound-mini 30 250 70K---
+llama-3.1-8b-instant 30 14.4K 6K 500K--
+llama-3.3-70b-versatile 30 1K 12K 100K--
+meta-llama/llama-4-maverick-17b-128e-instruct 30 1K 6K 500K--
+meta-llama/llama-4-scout-17b-16e-instruct 30 1K 30K 500K--
+meta-llama/llama-guard-4-12b 30 14.4K 15K 500K--
+meta-llama/llama-prompt-guard-2-22m 30 14.4K 15K 500K--
+meta-llama/llama-prompt-guard-2-86m 30 14.4K 15K 500K--
+moonshotai/kimi-k2-instruct 60 1K 10K 300K--
+moonshotai/kimi-k2-instruct-0905 60 1K 10K 300K--
+openai/gpt-oss-120b 30 1K 8K 200K--
+openai/gpt-oss-20b 30 1K 8K 200K--
+openai/gpt-oss-safeguard-20b 30 1K 8K 200K--
+qwen/qwen3-32b 60 1K 6K 500K--
+whisper-large-v3 20 2K--7.2K 28.8K
+whisper-large-v3-turbo 20 2K--7.2K 28.8K
+
+[Rate Limit Headers](https://console.groq.com/docs/rate-limits#rate-limit-headers)
+----------------------------------------------------------------------------------
+
+In addition to viewing your limits on your account's [limits](https://console.groq.com/settings/limits) page, you can also view rate limit information such as remaining requests and tokens in HTTP response headers as follows:
+
+The following headers are set (values are illustrative):
+
+| Header | Value | Notes |
+| --- | --- | --- |
+| retry-after | 2 | In seconds |
+| x-ratelimit-limit-requests | 14400 | Always refers to Requests Per Day (RPD) |
+| x-ratelimit-limit-tokens | 18000 | Always refers to Tokens Per Minute (TPM) |
+| x-ratelimit-remaining-requests | 14370 | Always refers to Requests Per Day (RPD) |
+| x-ratelimit-remaining-tokens | 17997 | Always refers to Tokens Per Minute (TPM) |
+| x-ratelimit-reset-requests | 2m59.56s | Always refers to Requests Per Day (RPD) |
+| x-ratelimit-reset-tokens | 7.66s | Always refers to Tokens Per Minute (TPM) |
+
+[Handling Rate Limits](https://console.groq.com/docs/rate-limits#handling-rate-limits)
+--------------------------------------------------------------------------------------
+
+When you exceed rate limits, our API returns a `429 Too Many Requests` HTTP status code.
+
+**Note**: `retry-after` is only set if you hit the rate limit and status code 429 is returned. The other headers are always included.
+
+### Was this page helpful?
+
+Yes No Suggest Edits
+
+#### On this page
+
+*    
+*    
+*

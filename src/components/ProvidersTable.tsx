@@ -13,7 +13,7 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table"
-import { ArrowUpDown, ExternalLink, Search } from "lucide-react"
+import { ArrowUpDown, ExternalLink, Search, Cpu, Wrench } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -44,12 +44,19 @@ interface ModelRow {
     providerUrl: string;
     type: "Free" | "Trial";
     limits: string;
-    tpm?: number;
-    rpm?: number;
-    rpd?: number;
-    tpd?: number;
+    tpm?: number | string;
+    rpm?: number | string;
+    rpd?: number | string;
+    tpd?: number | string;
     ash?: number;
     asd?: number;
+    apiModelName?: string;
+    toolCall?: boolean;
+    reasoning?: boolean;
+    input?: string[];
+    output?: string[];
+    contextLimit?: number;
+    outputLimit?: number;
 }
 
 
@@ -114,7 +121,7 @@ export const columns: ColumnDef<ModelRow>[] = [
       )
     },
     cell: ({ row }) => {
-      const val = row.getValue("tpm") as number | undefined
+      const val = row.getValue("tpm") as number | string | undefined
       return <div className="text-center font-mono text-xs">{val ? val.toLocaleString() : "-"}</div>
     },
   },
@@ -132,7 +139,7 @@ export const columns: ColumnDef<ModelRow>[] = [
       )
     },
     cell: ({ row }) => {
-      const val = row.getValue("rpm") as number | undefined
+      const val = row.getValue("rpm") as number | string | undefined
       return <div className="text-center font-mono text-xs">{val ? val.toLocaleString() : "-"}</div>
     },
   },
@@ -150,7 +157,7 @@ export const columns: ColumnDef<ModelRow>[] = [
       )
     },
     cell: ({ row }) => {
-      const val = row.getValue("rpd") as number | undefined
+      const val = row.getValue("rpd") as number | string | undefined
       return <div className="text-center font-mono text-xs">{val ? val.toLocaleString() : "-"}</div>
     },
   },
@@ -168,7 +175,7 @@ export const columns: ColumnDef<ModelRow>[] = [
       )
     },
     cell: ({ row }) => {
-      const val = row.getValue("tpd") as number | undefined
+      const val = row.getValue("tpd") as number | string | undefined
       return <div className="text-center font-mono text-xs">{val ? val.toLocaleString() : "-"}</div>
     },
   },
@@ -181,11 +188,91 @@ export const columns: ColumnDef<ModelRow>[] = [
     },
   },
   {
-    accessorKey: "asd",
-    header: "ASD",
+    accessorKey: "contextLimit",
+    header: ({ column }) => {
+      return (
+        <Button
+          variant="ghost"
+          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+        >
+          Context Limit
+          <ArrowUpDown className="ml-2 h-4 w-4" />
+        </Button>
+      )
+    },
     cell: ({ row }) => {
-      const val = row.getValue("asd") as number | undefined
-      return <div className="text-center font-mono text-xs text-muted-foreground">{val ? val.toLocaleString() : "-"}</div>
+      const val = row.getValue("contextLimit") as number | undefined
+      return <div className="text-center font-mono text-xs">{val ? val.toLocaleString() : "-"}</div>
+    },
+  },
+  {
+    accessorKey: "outputLimit",
+    header: ({ column }) => {
+      return (
+        <Button
+          variant="ghost"
+          onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
+        >
+          Output Limit
+          <ArrowUpDown className="ml-2 h-4 w-4" />
+        </Button>
+      )
+    },
+    cell: ({ row }) => {
+      const val = row.getValue("outputLimit") as number | undefined
+      return <div className="text-center font-mono text-xs">{val ? val.toLocaleString() : "-"}</div>
+    },
+  },
+  {
+    id: "features",
+    header: "Features",
+    cell: ({ row }) => {
+      const toolCall = row.original.toolCall
+      const reasoning = row.original.reasoning
+      
+      if (toolCall === undefined && reasoning === undefined) return <div className="text-center">-</div>
+      
+      return (
+        <div className="flex justify-center gap-1">
+          {toolCall && (
+            <Badge variant="outline" className="px-1 py-0!" title="Tool Calling Support">
+              <Wrench className="w-3 h-3 mr-1" /> Tools
+            </Badge>
+          )}
+          {reasoning && (
+            <Badge variant="outline" className="px-1 py-0!" title="Reasoning Support">
+              <Cpu className="w-3 h-3 mr-1" /> Reason
+            </Badge>
+          )}
+        </div>
+      )
+    },
+  },
+  {
+    id: "io",
+    header: "I/O",
+    cell: ({ row }) => {
+      const input = row.original.input || []
+      const output = row.original.output || []
+      
+      if (input.length === 0 && output.length === 0) return <div className="text-center">-</div>
+      
+      return (
+        <div className="flex flex-col gap-1 items-center">
+          {input.length > 0 && (
+            <div className="flex gap-1 text-[10px]" title={`Input: ${input.join(", ")}`}>
+              <span className="text-muted-foreground mr-1">In:</span>
+              <span className="truncate max-w-[80px]">{input.join(",")}</span>
+            </div>
+          )}
+          {output.length > 0 && (
+            <div className="flex gap-1 text-[10px]" title={`Output: ${output.join(", ")}`}>
+              <span className="text-muted-foreground mr-1">Out:</span>
+              <span className="truncate max-w-[80px]">{output.join(",")}</span>
+            </div>
+          )}
+        </div>
+      )
     },
   },
   {
@@ -225,56 +312,79 @@ export const columns: ColumnDef<ModelRow>[] = [
 
 ]
 
-export function ProvidersTable({ data }: { data: Provider[] }) {
+import { ChevronDown, ChevronRight } from "lucide-react"
+
+export function ProvidersTable({ data, renderedContent }: { data: Provider[], renderedContent?: string }) {
   const [sorting, setSorting] = React.useState<SortingState>([])
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
     []
   )
   const [globalFilter, setGlobalFilter] = React.useState("")
 
+
   // Transform Provider[] -> ModelRow[]
   const flattenedData = React.useMemo(() => {
-      const rows: ModelRow[] = [];
-      data.forEach(provider => {
-          if (provider.models && provider.models.length > 0) {
-              provider.models.forEach((model, index) => {
-                  const isObject = typeof model === 'object' && model !== null;
-                  const name = isObject ? (model as any).name : String(model);
-                  const m = isObject ? (model as any) : {};
+    const rows: ModelRow[] = [];
+    data.forEach((provider, pIndex) => {
+      // Create a composite ID if provider.id is missing
+      const providerId = provider.id || provider.name.toLowerCase().replace(/[^a-z0-9]/g, '-');
+      
+      if (provider.models && provider.models.length > 0) {
+        provider.models.forEach((modelObj, mIndex) => {
+          // Check if modelObj is a string (legacy/transition) or object (new schema)
+          const modelName = typeof modelObj === 'string' ? modelObj : modelObj.model_id;
+          const modelLimits = typeof modelObj === 'object' ? modelObj.limits : {};
 
-                  rows.push({
-                      id: `${provider.id}-${index}`,
-                      modelName: name,
-                      providerName: provider.name,
-                      providerUrl: provider.url,
-                      type: provider.type,
-                      limits: provider.limits,
-                      tpm: m.tpm ?? provider.tpm,
-                      rpm: m.rpm ?? provider.rpm,
-                      rpd: m.rpd ?? provider.rpd,
-                      tpd: m.tpd ?? provider.tpd,
-                      ash: m.ash,
-                      asd: m.asd,
-                  });
-              });
-          } else {
-              // Provider with no specific models listed (generic)
-               rows.push({
-                  id: `${provider.id}-generic`,
-                  modelName: "Various Models",
-                  providerName: provider.name,
-                  providerUrl: provider.url,
-                  type: provider.type,
-                  limits: provider.limits,
-                  tpm: provider.tpm,
-                  rpm: provider.rpm,
-                  rpd: provider.rpd,
-                  tpd: provider.tpd,
-              });
-          }
-      });
+          rows.push({
+            id: `${providerId}-${mIndex}`,
+            modelName: modelName,
+            providerName: provider.name,
+            providerUrl: provider.url || provider.link_url || "",
+            type: (provider.type as "Free" | "Trial") || "Free",
+            
+            // Map V2 limits to table columns
+            // provider.notes top level contains general notes
+            limits: provider.notes || "",
+            
+            // Limits are now per-model in the new schema
+            tpm: modelLimits?.TPM || modelLimits?.tpm,
+            rpm: modelLimits?.RPM || modelLimits?.rpm,
+            rpd: modelLimits?.RPD || modelLimits?.rpd,
+            tpd: modelLimits?.TPD || modelLimits?.tpd,
+            
+            
+            // Preserve legacy/other fields if they exist
+            ash: modelLimits?.ash,
+            asd: modelLimits?.asd,
+            
+            // V2 detailed model specifications
+            apiModelName: typeof modelObj === 'object' ? modelObj.api_model_name : undefined,
+            toolCall: typeof modelObj === 'object' ? modelObj.tool_call : undefined,
+            reasoning: typeof modelObj === 'object' ? modelObj.reasoning : undefined,
+            input: typeof modelObj === 'object' ? modelObj.input : undefined,
+            output: typeof modelObj === 'object' ? modelObj.output : undefined,
+            contextLimit: typeof modelObj === 'object' ? modelObj.context_limit : undefined,
+            outputLimit: typeof modelObj === 'object' ? modelObj.output_limit : undefined,
+          });
+        });
+      } else {
+        // Fallback for providers with no models list
+        rows.push({
+          id: `${providerId}-generic`,
+          modelName: "Various Models",
+          providerName: provider.name,
+          providerUrl: provider.url || provider.link_url || "",
+          type: (provider.type as "Free" | "Trial") || "Free",
+          limits: provider.notes || "",
+          tpm: undefined,
+          rpm: undefined,
+          rpd: undefined,
+          tpd: undefined,
+        });
+      }
+    });
 
-      return rows;
+    return rows;
   }, [data]);
 
   const table = useReactTable({
@@ -388,6 +498,39 @@ export function ProvidersTable({ data }: { data: Provider[] }) {
           </Button>
         </div>
       </div>
+
+        {renderedContent && (
+        <div className="mt-4 flex justify-end">
+             <Dialog>
+                <DialogTrigger asChild>
+                    <Button variant="outline" size="sm" className="gap-2">
+                        <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
+                        Verified Sources
+                    </Button>
+                </DialogTrigger>
+                <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
+                    <DialogHeader>
+                        <DialogTitle>Data Verification Sources</DialogTitle>
+                        <DialogDescription>
+                            This data was ground-truth verified using Google Search. The following sources were used to validate the limits.
+                        </DialogDescription>
+                    </DialogHeader>
+                     <div 
+                        className="
+                          mt-4 prose prose-sm dark:prose-invert max-w-none 
+                          [&_.container]:!bg-transparent [&_.container]:!p-0 [&_.container]:!shadow-none [&_.container]:!gap-4
+                          [&_.headline]:hidden
+                          [&_.carousel]:!flex [&_.carousel]:!flex-wrap [&_.carousel]:!gap-2 [&_.carousel]:!overflow-visible [&_.carousel]:!mr-0
+                          [&_.chip]:!inline-flex [&_.chip]:!items-center [&_.chip]:!justify-center [&_.chip]:!whitespace-normal [&_.chip]:!text-left [&_.chip]:!break-words [&_.chip]:!rounded-md [&_.chip]:!text-xs [&_.chip]:!font-medium [&_.chip]:!ring-offset-background [&_.chip]:!transition-colors [&_.chip]:!py-2 [&_.chip]:!px-3 [&_.chip]:!w-full
+                          [&_.chip]:!border [&_.chip]:!border-input [&_.chip]:!bg-secondary/50 [&_.chip]:!hover:bg-secondary [&_.chip]:!hover:text-secondary-foreground
+                          [&_.chip]:!text-foreground [&_.chip]:!no-underline [&_.chip]:!m-0
+                        "
+                        dangerouslySetInnerHTML={{ __html: renderedContent }} 
+                     />
+                </DialogContent>
+            </Dialog>
+        </div>
+      )}
     </div>
   )
 }

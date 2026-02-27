@@ -1,0 +1,438 @@
+Title: Mistral AI Studio - your AI production platform | Mistral AI
+
+URL Source: https://mistral.ai/technology/
+
+Markdown Content:
+Mistral AI Studio - your AI production platform | Mistral AI
+===============
+
+[![Image 17: Mistral AI Logo](https://mistral.ai/_next/image?url=%2Fimg%2Fmistral-ai-logo.svg&w=256&q=75&dpl=af0dc6ff06581a3bf12c0ad4a6d57604311637db9490f54fe56e8f1dfc802ff3363961303235656364643737636130303038613062633933) ![Image 18: Mistral AI Logo White](https://mistral.ai/_next/image?url=%2Fimg%2Fmistral-ai-logo-white.svg&w=256&q=75&dpl=af0dc6ff06581a3bf12c0ad4a6d57604311637db9490f54fe56e8f1dfc802ff3363961303235656364643737636130303038613062633933)](https://mistral.ai/)Products[Solutions](https://mistral.ai/solutions)[Research](https://mistral.ai/models)[Blog](https://mistral.ai/news)[Customers](https://mistral.ai/customers)Company
+
+[Contact Sales](https://mistral.ai/contact)
+
+[Try Studio](https://console.mistral.ai/?utm_source=website&utm_medium=header_cta)
+
+Everything you need at the frontier.
+====================================
+
+Create AI use cases, manage the AI full lifecycle, and ship with confidence, all with enterprise privacy, security, and full ownership of your data.
+
+[Enterprise deployments](https://mistral.ai/contact)[Try Studio](https://console.mistral.ai/)
+
+![Image 19: e2d06cb1-c252-48e6-9192-11dc111096e2](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2Fe2d06cb1-c252-48e6-9192-11dc111096e2&w=3840&q=75)
+
+### AI tooling, models, and infrastructure. Deployable ![Image 20: Boat](https://cms.mistral.ai/assets/a0ab77c1-8afe-4a29-97f0-ec958fe00742.svg?width=null&height=null) anywhere.
+
+Mistral AI Studio is the AI builders' preferred toolkit.
+
+[Start building](http://console.mistral.ai/)
+
+Applied AI and deployment services
+
+AI tooling Agent Runtime
+
+Observability
+
+AI Registry
+
+Post-training
+
+Custom pre-training
+
+Data and tool connections
+Library of frontier LLMs SOTA language models
+
+Small and edge models
+
+Code models
+
+Multimodal models
+
+Custom models
+AI infrastructure management Inference container
+
+Routing/caching
+
+Load balancing
+
+API gateway
+
+Security and resilience
+
+### Why Studio?
+
+### Packaged best practices from a frontier AI lab.
+
+Leverage our best practices playbook behind SOTA models, built to meet enterprise challenges.
+
+### Privacy by design.
+
+Retain full data ownership, whether deploying privately, in a dedicated environment, or self-hosted.
+
+![Image 21: icon-filters-beige](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F0b3921c0-be67-468e-b7c9-76f53ca63f04&w=3840&q=75)
+
+### State and telemetry control.
+
+Traces, metrics, and evaluation judges are wired into datasets and experiments for full control.
+
+![Image 22: icon-copy-beige](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2Fc141cff0-0304-4835-a27a-a552ef80e7f1&w=3840&q=75)
+
+### Unified AI registry.
+
+Connect models, agents, datasets, and tools with full lineage and version control through a governed catalog.
+
+![Image 23: icon-lightbulb-beige](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F320ced30-042e-4e06-8253-babd1182cb16&w=3840&q=75)
+
+### Expertly orchestrated intelligence.
+
+Only Mistral AI Studio delivers expertly combined LLM Agents, rules, and deterministic code tuned to enterprise use cases.
+
+### Comprehensive AI tooling.
+
+Mistral Studio unifies reusable blocks (agents, tools, connectors, guardrails, judges, datasets, workflows, evaluations) with observability and workflow telemetry so teams can move from PoC to production, safely and measurably.
+
+Agent Runtime
+
+![Image 24: check-orange](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F8650f201-4d4f-490e-bf47-65dc4d111779&w=3840&q=75)
+
+AI Registry
+
+![Image 25: check-orange](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F8650f201-4d4f-490e-bf47-65dc4d111779&w=3840&q=75)
+
+Observability
+
+![Image 26: check-orange](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F8650f201-4d4f-490e-bf47-65dc4d111779&w=3840&q=75)
+
+Post-training
+
+![Image 27: check-orange](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F8650f201-4d4f-490e-bf47-65dc4d111779&w=3840&q=75)
+
+Custom pre-training
+
+![Image 28: check-orange](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F8650f201-4d4f-490e-bf47-65dc4d111779&w=3840&q=75)
+
+Data and tool connections
+
+![Image 29: check-orange](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F8650f201-4d4f-490e-bf47-65dc4d111779&w=3840&q=75)
+
+Agent Runtime
+
+Make multi-step AI work repeatable, observable, and shareable. Gain transparency in agentic business workflows to reduce failures, clarify ownership, and quickly resolve incidents.
+
+![Image 30: 21ae6d9c-689f-403c-be49-aa883f9b2d28](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F21ae6d9c-689f-403c-be49-aa883f9b2d28&w=3840&q=75)
+
+AI Registry
+
+Govern every AI asset with confidence and clarity. A unified catalog coupled with comprehensive management controls delivers complete traceability, safer collaboration, and faster promotion from experiment to production.
+
+![Image 31: 693d647e-9821-4cd3-8d65-14da7058f031](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F693d647e-9821-4cd3-8d65-14da7058f031&w=3840&q=75)
+
+Observability
+
+Understand your AI, not just its metrics. Legacy observability stops at technical metrics — we go further. Our approach focuses on behavioral KPIs and statistical signals that explain not just what happened, but why. Built for AI systems where patterns matter more than point values, it helps you understand, iterate, and act with confidence.
+
+![Image 32: e2e79beb-1dac-41d8-8434-ffc6d2254a3a](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2Fe2e79beb-1dac-41d8-8434-ffc6d2254a3a&w=3840&q=75)
+
+Post-training
+
+Customize models for your specific use cases with complete control over the training process. Mistral AI Studio enables teams to adapt models to their domain-specific needs while maintaining performance and reliability.
+
+![Image 33: 12686646-a8b8-4c85-ba4a-43f33d7e802f](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F12686646-a8b8-4c85-ba4a-43f33d7e802f&w=3840&q=75)
+
+Custom pre-training
+
+Go beyond post-training to train open models deeply on your domain and deploy with governance, ensuring control, lineage, and higher compliance.
+
+![Image 34: 37a56940-62ae-4211-89f3-7ada980b55ed](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F37a56940-62ae-4211-89f3-7ada980b55ed&w=3840&q=75)
+
+Data and tool connections
+
+Query, cross-reference, and perform actions on any enterprise data sources using custom or MCP connectors.
+
+![Image 35: 71ef2c45-fe03-4d61-a58e-9f372acaaaec](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F71ef2c45-fe03-4d61-a58e-9f372acaaaec&w=3840&q=75)
+
+Build with freedom.
+
+Faster iteration
+
+*   Experiments: Design and compare model variations in controlled environments. 
+*   Iterations: Rapidly refine performance with reproducible, versioned runs. 
+*   Judges: Evaluate outputs automatically using built-in or custom scoring models. 
+
+![Image 36: f473b396-e2af-4b5e-a70f-881379ab6593](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2Ff473b396-e2af-4b5e-a70f-881379ab6593&w=3840&q=75)
+
+Measurable quality
+
+*   Datasets: Turn real traffic and feedback into curated, high-quality datasets. 
+*   Judge scores: Quantify improvements with consistent, interpretable metrics. 
+*   APM metrics: Track latency, accuracy, and reliability across every deployment. 
+
+![Image 37: a324708b-3263-4812-9fab-5b42eae871b4](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2Fa324708b-3263-4812-9fab-5b42eae871b4&w=3840&q=75)
+
+Lower-risk deployments
+
+*   Moderation: Detect and filter unsafe or non-compliant outputs automatically. 
+*   Guardrails: Enforce behavioral and policy constraints at runtime. 
+*   Versioning and rollback: Safely deploy new iterations with instant rollback options. 
+
+![Image 38: f4a0149c-36c8-48ab-9ece-49ab2f31db09](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2Ff4a0149c-36c8-48ab-9ece-49ab2f31db09&w=3840&q=75)
+
+Deep observability
+
+*   Traces: Visualize every request and response to diagnose issues fast. 
+*   Dashboards: Monitor health, usage, and experiment outcomes in real time. 
+*   Workflow telemetry: Gain visibility into multi-step pipelines and dependencies. 
+
+![Image 39: cee0454a-0315-4709-ab63-5355b307c8d2](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2Fcee0454a-0315-4709-ab63-5355b307c8d2&w=3840&q=75)
+
+Portability
+
+*   Hybrid: Deploy seamlessly across cloud and on-prem environments. 
+*   Dedicated environments: Isolate workloads for security, compliance, or performance. 
+*   Self-hosted deployment: Retain full control over infrastructure and data residency. 
+*   Exportable artifacts: Package and move trained assets across systems with ease. 
+
+![Image 40: 33e5e3e5-ad9f-49f9-94d8-3dc1b165da84](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F33e5e3e5-ad9f-49f9-94d8-3dc1b165da84&w=3840&q=75)
+
+Traceability and reuse
+
+*   Unified registry: Connect models, agents, datasets, and workflows under one lineage system. 
+*   Version control: Track changes and reuse assets confidently across teams. 
+
+![Image 41: 716c2298-27b3-4353-99c3-85e4103a0749](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F716c2298-27b3-4353-99c3-85e4103a0749&w=3840&q=75)
+
+Privacy and control
+
+*   Data governance: Your data stays within your perimeter—never shared or exposed. 
+*   Auditability: Maintain full transparency across datasets, models, and experiments. 
+
+![Image 42: 2e8b1168-4e76-44ff-b362-7bbd50c62203](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F2e8b1168-4e76-44ff-b362-7bbd50c62203&w=3840&q=75)
+
+Faster iteration
+
+Measurable quality
+
+Lower-risk deployments
+
+Deep observability
+
+Portability
+
+Traceability and reuse
+
+Privacy and control
+
+Faster iteration
+
+*   Experiments: Design and compare model variations in controlled environments. 
+*   Iterations: Rapidly refine performance with reproducible, versioned runs. 
+*   Judges: Evaluate outputs automatically using built-in or custom scoring models. 
+
+![Image 43: f473b396-e2af-4b5e-a70f-881379ab6593](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2Ff473b396-e2af-4b5e-a70f-881379ab6593&w=3840&q=75)
+
+Measurable quality
+
+*   Datasets: Turn real traffic and feedback into curated, high-quality datasets. 
+*   Judge scores: Quantify improvements with consistent, interpretable metrics. 
+*   APM metrics: Track latency, accuracy, and reliability across every deployment. 
+
+![Image 44: a324708b-3263-4812-9fab-5b42eae871b4](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2Fa324708b-3263-4812-9fab-5b42eae871b4&w=3840&q=75)
+
+Lower-risk deployments
+
+*   Moderation: Detect and filter unsafe or non-compliant outputs automatically. 
+*   Guardrails: Enforce behavioral and policy constraints at runtime. 
+*   Versioning and rollback: Safely deploy new iterations with instant rollback options. 
+
+![Image 45: f4a0149c-36c8-48ab-9ece-49ab2f31db09](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2Ff4a0149c-36c8-48ab-9ece-49ab2f31db09&w=3840&q=75)
+
+Deep observability
+
+*   Traces: Visualize every request and response to diagnose issues fast. 
+*   Dashboards: Monitor health, usage, and experiment outcomes in real time. 
+*   Workflow telemetry: Gain visibility into multi-step pipelines and dependencies. 
+
+![Image 46: cee0454a-0315-4709-ab63-5355b307c8d2](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2Fcee0454a-0315-4709-ab63-5355b307c8d2&w=3840&q=75)
+
+Portability
+
+*   Hybrid: Deploy seamlessly across cloud and on-prem environments. 
+*   Dedicated environments: Isolate workloads for security, compliance, or performance. 
+*   Self-hosted deployment: Retain full control over infrastructure and data residency. 
+*   Exportable artifacts: Package and move trained assets across systems with ease. 
+
+![Image 47: 33e5e3e5-ad9f-49f9-94d8-3dc1b165da84](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F33e5e3e5-ad9f-49f9-94d8-3dc1b165da84&w=3840&q=75)
+
+Traceability and reuse
+
+*   Unified registry: Connect models, agents, datasets, and workflows under one lineage system. 
+*   Version control: Track changes and reuse assets confidently across teams. 
+
+![Image 48: 716c2298-27b3-4353-99c3-85e4103a0749](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F716c2298-27b3-4353-99c3-85e4103a0749&w=3840&q=75)
+
+Privacy and control
+
+*   Data governance: Your data stays within your perimeter—never shared or exposed. 
+*   Auditability: Maintain full transparency across datasets, models, and experiments. 
+
+![Image 49: 2e8b1168-4e76-44ff-b362-7bbd50c62203](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F2e8b1168-4e76-44ff-b362-7bbd50c62203&w=3840&q=75)
+
+### Widest library of frontier LLMs.
+
+Mistral Studio is your entry point for all our frontier models, ready to deploy as-is or for your pre-training and post-training customizations.
+
+Mistral Large 3
+
+One of the best OSS models in the world.
+
+![Image 50](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2Ff563ea48-4946-42b3-86ae-21f7e91b7a12&w=3840&q=75)
+
+[](https://docs.mistral.ai/getting-started/models/models_overview/#premier-models)
+
+Mistral Medium 3
+
+State-of-the-art performance at 8X lower cost.
+
+![Image 51](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2Ffefb95db-897b-4a48-a9ab-ed0ac4273d65&w=3840&q=75)
+
+[](https://docs.mistral.ai/getting-started/models/models_overview/#premier-models)
+
+Ministral 3 Family
+
+The world’s best edge models.
+
+![Image 52](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2Faf7bbcdd-dc1a-432e-b020-0f1515b7ce54&w=3840&q=75)
+
+[](https://mistral.ai/news/ministraux)
+
+[](https://mistral.ai/technology/#)
+
+[Explore more models](https://mistral.ai/models)
+
+Deployable ![Image 53: Arrow Right](https://cms.mistral.ai/assets/5708523c-f221-47bb-bb62-d052ee70bbc6.svg?width=null&height=null) anywhere.
+
+Deploy Mistral Studio anywhere and maintain complete control over your AI while leveraging production-ready infrastructure, optimized inference engine, caching, routing, security controls, and automated deployment.
+
+Self-hosted
+
+Mistral Cloud
+
+Cloud providers
+
+Deploy Mistral Studio on virtual cloud, edge, or on-premises. Self-hosted deployments offer more advanced levels of customization and control. Your data stays within your walls.
+
+[Contact our team](https://mistral.ai/contact)
+
+![Image 54: 782833a7-8c6a-4fae-87bc-7cea9bca22cd](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F782833a7-8c6a-4fae-87bc-7cea9bca22cd&w=3840&q=75)
+
+Get started with Mistral Studio hosted on Mistral’s infrastructure and build your own applications and services with our APIs. Our servers are hosted in EU.
+
+[Discover Studio](https://console.mistral.ai/)
+
+![Image 55: c99bd909-0b5b-4ad7-8992-f81660c48a08](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2Fc99bd909-0b5b-4ad7-8992-f81660c48a08&w=3840&q=75)
+
+Access the power of Mistral AI Studio via your preferred cloud provider (Google Cloud, AWS, Azure, SAP, IBM, Snowflake, NVIDIA, Outscale) using your cloud credits.
+
+[Explore cloud deployments](https://docs.mistral.ai/deployment/cloud)
+
+![Image 56: bdd57ea1-afa5-4e96-bcf9-3e900a168aa5](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2Fbdd57ea1-afa5-4e96-bcf9-3e900a168aa5&w=3840&q=75)
+
+### Deployable ![Image 57: Arrow Right](https://cms.mistral.ai/assets/5708523c-f221-47bb-bb62-d052ee70bbc6.svg?width=null&height=null) anywhere.
+
+Deploy Mistral Studio anywhere and maintain complete control over your AI while leveraging production-ready infrastructure, optimized inference engine, caching, routing, security controls, and automated deployment.
+
+Self-hosted
+
+Mistral Cloud
+
+Cloud providers
+
+Deploy Mistral Studio on virtual cloud, edge, or on-premises. Self-hosted deployments offer more advanced levels of customization and control. Your data stays within your walls.
+
+[Contact our team](https://mistral.ai/contact)
+
+![Image 58: 782833a7-8c6a-4fae-87bc-7cea9bca22cd](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F782833a7-8c6a-4fae-87bc-7cea9bca22cd&w=3840&q=75)
+
+### Deeply engaged applied AI services.
+
+Transform general LLMs into specialized solutions with expert guidance and deployment.
+
+### Custom training
+
+Transform general-purpose LLMs into specialized intelligence powerhouses with domain-specific training services, achieving enhanced accuracy while reducing model size by 2-3x through advanced distillation techniques for optimal performance.
+
+### Use case discovery
+
+Partner with our expert team to define clear AI adoption success criteria and build targeted use cases aligned with your organization’s goals, business objectives, and existing data platforms for maximum value realization.
+
+### Deployment services
+
+Process tens of billions of tokens daily across thousands of GPUs with enterprise-grade deployment capabilities, choosing from flexible options including public clouds, private infrastructure, or on-premises installations with comprehensive expert support.
+
+### Enablement and value delivery
+
+Progress from proof of value to full deployment with expert guidance at every step, transforming your business objectives into custom AI solutions that deliver measurable results, including 94% reduction in cost per token and 70% improvement in latency.
+
+[Explore applied AI services](https://mistral.ai/services)
+
+### Build the next ![Image 59: Arrow Right](https://cms.mistral.ai/assets/5708523c-f221-47bb-bb62-d052ee70bbc6.svg?width=null&height=null) big thing.
+
+Documentation
+
+Comprehensive guides and API references.
+
+[View docs](https://docs.mistral.ai/)
+
+Examples
+
+Ready-to-use code samples and tutorials.
+
+[Browse examples](https://github.com/mistralai/cookbook)
+
+Support
+
+Expert guidance and community resources.
+
+[Get help](https://discord.com/invite/mistralai)
+
+![Image 60](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2Fc6f20b21-8d22-423f-a5a6-9aa3a9bbbf61&w=256&q=75)
+Explore flexible pricing options, right-sized for your business.
+----------------------------------------------------------------
+
+[View pricing](https://mistral.ai/pricing)
+
+Build your own AI future.
+-------------------------
+
+Build, customize, and deploy AI solutions with complete control.
+
+[Try le Chat](https://chat.mistral.ai/)[Build on Mistral Studio](https://console.mistral.ai/)[Talk to an expert](https://mistral.ai/technology/#)
+
+![Image 61: LeChat - Mistral](https://cms.mistral.ai/assets/920e56ee-25c5-439d-bd31-fbdf5c92c87f)
+
+[](https://mistral.ai/)
+
+[![Image 62: App Store Mistral AI](https://mistral.ai/_next/image?url=%2Fimg%2Fappstore.svg&w=256&q=75&dpl=af0dc6ff06581a3bf12c0ad4a6d57604311637db9490f54fe56e8f1dfc802ff3363961303235656364643737636130303038613062633933)](https://apps.apple.com/us/app/le-chat-by-mistral-ai/id6740410176)[![Image 63: Google Play Mistral AI](https://mistral.ai/_next/image?url=%2Fimg%2Fandroidstore.svg&w=256&q=75&dpl=af0dc6ff06581a3bf12c0ad4a6d57604311637db9490f54fe56e8f1dfc802ff3363961303235656364643737636130303038613062633933)](https://play.google.com/store/apps/details?id=ai.mistral.chat)
+
+Mistral AI © 2026
+
+### Why Mistral
+
+[About us](https://mistral.ai/about)[Our customers](https://mistral.ai/customers)[Careers](https://mistral.ai/careers)[Contact us](https://mistral.ai/contact)
+
+### Explore
+
+[AI solutions](https://mistral.ai/solutions)[Partners](https://mistral.ai/partners)[Research](https://mistral.ai/news?category=research)[Documentation](https://docs.mistral.ai/)
+
+### Build
+
+[Studio](https://mistral.ai/products/studio)[Le Chat](https://mistral.ai/products/le-chat)[Vibe](https://mistral.ai/products/vibe)[Mistral Compute](https://mistral.ai/products/compute)
+
+### Legal
+
+[Terms of service](https://legal.mistral.ai/terms)[Privacy policy](https://legal.mistral.ai/terms/privacy-policy?language=en-US)Privacy choices[Data processing agreement](https://legal.mistral.ai/terms/data-processing-addendum)[Legal notice](https://mistral.ai/legal)[Brand](https://mistral.ai/brand)
+
+en
+Mistral AI © 2026
+
+[![Image 64](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F9c3aec2e-9825-4691-8458-cf4bd48ceff5&w=96&q=75)](https://x.com/mistralai)[![Image 65](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2Fb68af65f-220d-4116-b522-fe9ab25c7f32&w=96&q=75)](https://www.linkedin.com/company/mistralai/)[![Image 66](https://mistral.ai/_next/image?url=https%3A%2F%2Fcms.mistral.ai%2Fassets%2F0f8631ea-bfbc-4075-8f2e-c8f681076d7b&w=96&q=75)](https://discord.gg/mistralai)
