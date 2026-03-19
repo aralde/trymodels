@@ -1,4 +1,3 @@
-"use strict";
 "use client";
 
 import * as React from "react"

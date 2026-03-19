@@ -22,7 +22,7 @@ export interface Provider {
             RPD?: number | string;
             TPM?: number | string;
             TPD?: number | string;
-            [key: string]: any;
+            [key: string]: string | number | boolean | undefined;
         };
         api_model_name?: string;
         tool_call?: boolean;

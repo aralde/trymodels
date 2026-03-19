@@ -16,7 +16,7 @@ import {
 export default function Home() {
   // Cast strictly to ensure type compatibility if JSON inference is loose
   const data: Provider[] = providers as Provider[];
-  const meta: any = metadata;
+  const meta = metadata as { renderedContent: string };
 
 
   return (
@@ -24,7 +24,7 @@ export default function Home() {
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
         <div className="flex flex-col gap-2">
           <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl">
-            Free LLM API Resources
+            TryModels
           </h1>
           <p className="text-xl text-muted-foreground">
             A community-curated list of free and trial LLM API providers.
@@ -43,22 +43,22 @@ export default function Home() {
               </DialogHeader>
               <div className="space-y-6 text-sm">
                 <p>
-                  <strong>Free LLM API Resources</strong> is a comprehensive open-source database of AI model specifications, pricing, and features.
+                  <strong>TryModels</strong> is a comprehensive open-source database of AI model specifications, pricing, and features.
                 </p>
                 <p>
-                  There's no single database with information about all the available AI models. We started this as a community-contributed project to address this. We also use it internally in opencode.
+                  There&apos;s no single database with information about all the available AI models. We started this as a community-contributed project to address this. We also use it internally in opencode.
                 </p>
                 
                 <div>
                   <h3 className="font-bold text-lg mb-2">API</h3>
                   <p className="mb-3">You can access this data through an API.</p>
                   <div className="bg-[#18181b] text-zinc-100 p-4 rounded-md font-mono text-sm overflow-x-auto shadow-inner">
-                    curl <span className="text-zinc-300">https://Free-llm-resources.com/api/data.json</span>
+                    curl <span className="text-zinc-300">https://trymodels.com/api/models</span>
                   </div>
                 </div>
                 
                 <p>
-                  Use the <strong>Model ID</strong> field to do a lookup on any model; it's the identifier used by AI SDK.
+                  Use the <strong>Model ID</strong> field to do a lookup on any model; it&apos;s the identifier used by AI SDK.
                 </p>
               </div>
             </DialogContent>
