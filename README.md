@@ -10,7 +10,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=flat-square&logo=vercel)](https://trymodels.com)
 
-> **TryModels** is a high-performance, community-first directory and API designed to bridge the gap between developers and free AI resources. This is a **featured portfolio project** by [Ariel Deibe](https://github.com/arieldeibe), showcasing modern web architecture, automated data tracking, and developer-centric UX.
+> **TryModels** is a high-performance, community-first directory and API designed to bridge the gap between developers and free AI resources. It showcases modern web architecture, automated data tracking, and developer-centric UX.
 
 ---
 
@@ -66,4 +66,4 @@ This project is built for the global developer community. Whether you want to ad
 
 This project is licensed under the [MIT License](LICENSE).
 
-Built with ❤️ by [Ariel Deibe](https://github.com/arieldeibe)
+Built with ❤️ by the community

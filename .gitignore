@@ -1,6 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
+/.agents
 /node_modules
 /.pnp
 .pnp.*
@@ -35,6 +36,7 @@ yarn-error.log*
 !.env.example
 
 # Custom exclusions (API sec/privacy)
+/.agents/
 /scripts/
 *.log
 

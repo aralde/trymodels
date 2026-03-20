@@ -78,11 +78,6 @@ export default function Home() {
       
       <ProvidersTable data={data} renderedContent={meta.renderedContent} />
       
-      <footer className="mt-10 text-center text-sm text-muted-foreground py-6 border-t">
-        <p>
-          Data extracted automatically. Verify limits on provider sites.
-        </p>
-      </footer>
     </main>
   );
 }

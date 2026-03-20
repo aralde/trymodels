@@ -346,15 +346,15 @@ export function ProvidersTable({ data, renderedContent }: { data: Provider[], re
             limits: provider.notes || "",
             
             // Limits are now per-model in the new schema
-            tpm: modelLimits?.TPM || modelLimits?.tpm,
-            rpm: modelLimits?.RPM || modelLimits?.rpm,
-            rpd: modelLimits?.RPD || modelLimits?.rpd,
-            tpd: modelLimits?.TPD || modelLimits?.tpd,
+            tpm: (modelLimits?.TPM || modelLimits?.tpm) as number | string | undefined,
+            rpm: (modelLimits?.RPM || modelLimits?.rpm) as number | string | undefined,
+            rpd: (modelLimits?.RPD || modelLimits?.rpd) as number | string | undefined,
+            tpd: (modelLimits?.TPD || modelLimits?.tpd) as number | string | undefined,
             
             
             // Preserve legacy/other fields if they exist
-            ash: modelLimits?.ash,
-            asd: modelLimits?.asd,
+            ash: modelLimits?.ash as number | undefined,
+            asd: modelLimits?.asd as number | undefined,
             
             // V2 detailed model specifications
             apiModelName: typeof modelObj === 'object' ? modelObj.api_model_name : undefined,
@@ -386,13 +386,15 @@ export function ProvidersTable({ data, renderedContent }: { data: Provider[], re
     return rows;
   }, [data]);
 
+  const [visibleCount, setVisibleCount] = React.useState(20)
+  const observerTarget = React.useRef<HTMLDivElement>(null)
+
   const table = useReactTable({
     data: flattenedData,
     columns,
     onSortingChange: setSorting,
     onColumnFiltersChange: setColumnFilters,
     getCoreRowModel: getCoreRowModel(),
-    getPaginationRowModel: getPaginationRowModel(),
     getSortedRowModel: getSortedRowModel(),
     getFilteredRowModel: getFilteredRowModel(),
     onGlobalFilterChange: setGlobalFilter,
@@ -410,6 +412,31 @@ export function ProvidersTable({ data, renderedContent }: { data: Provider[], re
         return model.includes(search) || provider.includes(search);
     }
   })
+
+  const allRows = table.getRowModel().rows
+  const visibleRows = React.useMemo(() => allRows.slice(0, visibleCount), [allRows, visibleCount])
+
+  React.useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting && visibleCount < allRows.length) {
+          setVisibleCount((prev) => Math.min(prev + 20, allRows.length))
+        }
+      },
+      { threshold: 0.1 }
+    )
+
+    if (observerTarget.current) {
+      observer.observe(observerTarget.current)
+    }
+
+    return () => observer.disconnect()
+  }, [allRows.length, visibleCount])
+
+  // Reset visibleCount when filters change
+  React.useEffect(() => {
+    setVisibleCount(20)
+  }, [globalFilter, columnFilters])
 
   return (
     <div className="w-full">
@@ -448,8 +475,8 @@ export function ProvidersTable({ data, renderedContent }: { data: Provider[], re
             ))}
           </TableHeader>
           <TableBody>
-            {table.getRowModel().rows?.length ? (
-              table.getRowModel().rows.map((row) => (
+            {visibleRows.length ? (
+              visibleRows.map((row) => (
                 <TableRow
                   key={row.id}
                   data-state={row.getIsSelected() && "selected"}
@@ -477,59 +504,13 @@ export function ProvidersTable({ data, renderedContent }: { data: Provider[], re
           </TableBody>
         </Table>
       </div>
-      <div className="flex items-center justify-end space-x-2 py-4">
-        <div className="space-x-2">
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => table.previousPage()}
-            disabled={!table.getCanPreviousPage()}
-          >
-            Previous
-          </Button>
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => table.nextPage()}
-            disabled={!table.getCanNextPage()}
-          >
-            Next
-          </Button>
-        </div>
+      
+      {/* Sentinel for Infinite Scroll */}
+      <div ref={observerTarget} className="h-10 w-full flex items-center justify-center">
+        {visibleCount < allRows.length && (
+          <div className="animate-pulse text-sm text-muted-foreground">Loading more models...</div>
+        )}
       </div>
-
-        {renderedContent && (
-        <div className="mt-4 flex justify-end">
-             <Dialog>
-                <DialogTrigger asChild>
-                    <Button variant="outline" size="sm" className="gap-2">
-                        <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
-                        Verified Sources
-                    </Button>
-                </DialogTrigger>
-                <DialogContent className="max-w-3xl max-h-[80vh] overflow-y-auto">
-                    <DialogHeader>
-                        <DialogTitle>Data Verification Sources</DialogTitle>
-                        <DialogDescription>
-                            This data was ground-truth verified using Google Search. The following sources were used to validate the limits.
-                        </DialogDescription>
-                    </DialogHeader>
-                     <div 
-                        className="
-                          mt-4 prose prose-sm dark:prose-invert max-w-none 
-                          [&_.container]:!bg-transparent [&_.container]:!p-0 [&_.container]:!shadow-none [&_.container]:!gap-4
-                          [&_.headline]:hidden
-                          [&_.carousel]:!flex [&_.carousel]:!flex-wrap [&_.carousel]:!gap-2 [&_.carousel]:!overflow-visible [&_.carousel]:!mr-0
-                          [&_.chip]:!inline-flex [&_.chip]:!items-center [&_.chip]:!justify-center [&_.chip]:!whitespace-normal [&_.chip]:!text-left [&_.chip]:!break-words [&_.chip]:!rounded-md [&_.chip]:!text-xs [&_.chip]:!font-medium [&_.chip]:!ring-offset-background [&_.chip]:!transition-colors [&_.chip]:!py-2 [&_.chip]:!px-3 [&_.chip]:!w-full
-                          [&_.chip]:!border [&_.chip]:!border-input [&_.chip]:!bg-secondary/50 [&_.chip]:!hover:bg-secondary [&_.chip]:!hover:text-secondary-foreground
-                          [&_.chip]:!text-foreground [&_.chip]:!no-underline [&_.chip]:!m-0
-                        "
-                        dangerouslySetInnerHTML={{ __html: renderedContent }} 
-                     />
-                </DialogContent>
-            </Dialog>
-        </div>
-      )}
     </div>
   )
 }
