@@ -138,15 +138,33 @@ function parseAbbrev(numStr: string, suffix: string): number | '' {
 
 // ─── Helper: Fetch OpenRouter :free models ────────────────────────────────────
 
+type LimitValue = number | '';
+
+interface CronModel {
+    model_id: string;
+    limits: { RPM: LimitValue; RPD: LimitValue; TPM: LimitValue; TPD: LimitValue };
+    context_window?: string;
+    notes?: string;
+}
+
+interface CronProvider {
+    id?: string;
+    name: string;
+    models: CronModel[];
+    notes?: string;
+    context_window?: string;
+    link_url?: string;
+}
+
 // Hardcoded fallback limits for Google models (as of Feb 2026)
 // These are not in the public docs but are known free tier baselines.
-const GOOGLE_LIMITS_FALLBACK = {
+const GOOGLE_LIMITS_FALLBACK: Record<'PRO' | 'FLASH', CronModel['limits'] & { contextQuery: string }> = {
     PRO: { RPM: 2, RPD: 50, TPM: 32000, TPD: '', contextQuery: '1,000,000' },
     FLASH: { RPM: 15, RPD: 1500, TPM: 1000000, TPD: '', contextQuery: '1,000,000' },
 };
 
-function enrichGoogleLimits(models: any[]) {
-    return models.map((m: any) => {
+function enrichGoogleLimits(models: CronModel[]): CronModel[] {
+    return models.map((m) => {
         // If limits are already populated, keep them
         if (m.limits.RPM !== '' && m.limits.RPD !== '') return m;
 
@@ -185,7 +203,7 @@ interface OpenRouterModel {
     [key: string]: unknown;
 }
 
-async function fetchOpenRouterFreeModels(): Promise<{ model_id: string; limits: { RPM: number | ''; RPD: number | ''; TPM: number | ''; TPD: number | '' } }[]> {
+async function fetchOpenRouterFreeModels(): Promise<CronModel[]> {
     try {
         console.log('[Cron] Fetching OpenRouter free models from API...');
         const response = await fetch('https://openrouter.ai/api/v1/models', {
@@ -321,7 +339,7 @@ ${rawExtraction}`;
 
         // Apply deterministic normalization as guaranteed backstop:
         // handles null (from schema coercion), '3.6K', 'Up to 500 (shared...)', 'N/A', etc.
-        const providers = normalized.providers.map((p) => ({
+        const providers: CronProvider[] = normalized.providers.map((p) => ({
             ...p,
             models: p.models.map((m) => ({
                 ...m,
@@ -336,7 +354,7 @@ ${rawExtraction}`;
 
         // ── Step 6.5: Enrich Google AI Studio limits (fallback for missing docs) ──
         const googleIndex = providers.findIndex(
-            (p: any) => p.name?.toLowerCase().includes('google') || p.id === 'google-ai-studio'
+            (p) => p.name?.toLowerCase().includes('google') || p.id === 'google-ai-studio'
         );
         if (googleIndex !== -1) {
             console.log('[Cron] Enriching Google AI Studio models with known free tier limits...');
@@ -347,7 +365,7 @@ ${rawExtraction}`;
         const openRouterFreeModels = await fetchOpenRouterFreeModels();
         if (openRouterFreeModels.length > 0) {
             const orIndex = providers.findIndex(
-                (p: any) => p.name?.toLowerCase().includes('openrouter') || p.id === 'openrouter'
+                (p) => p.name?.toLowerCase().includes('openrouter') || p.id === 'openrouter'
             );
             if (orIndex !== -1) {
                 console.log(`[Cron] Replacing OpenRouter models with ${openRouterFreeModels.length} :free models from API.`);
@@ -406,8 +424,9 @@ ${rawExtraction}`;
             openRouterFreeModels: openRouterFreeModels.length,
         });
 
-    } catch (error: any) {
+    } catch (error) {
         console.error('[Cron] Error:', error);
-        return NextResponse.json({ success: false, error: error.message }, { status: 500 });
+        const message = error instanceof Error ? error.message : String(error);
+        return NextResponse.json({ success: false, error: message }, { status: 500 });
     }
 }
