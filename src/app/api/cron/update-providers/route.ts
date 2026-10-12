@@ -138,15 +138,24 @@ function parseAbbrev(numStr: string, suffix: string): number | '' {
 
 // ─── Helper: Fetch OpenRouter :free models ────────────────────────────────────
 
+type LimitValue = number | '';
+
+interface ModelEntry {
+    model_id: string;
+    limits: { RPM: LimitValue; RPD: LimitValue; TPM: LimitValue; TPD: LimitValue };
+    context_window?: string;
+    notes?: string;
+}
+
 // Hardcoded fallback limits for Google models (as of Feb 2026)
 // These are not in the public docs but are known free tier baselines.
-const GOOGLE_LIMITS_FALLBACK = {
+const GOOGLE_LIMITS_FALLBACK: Record<'PRO' | 'FLASH', ModelEntry['limits'] & { contextQuery: string }> = {
     PRO: { RPM: 2, RPD: 50, TPM: 32000, TPD: '', contextQuery: '1,000,000' },
     FLASH: { RPM: 15, RPD: 1500, TPM: 1000000, TPD: '', contextQuery: '1,000,000' },
 };
 
-function enrichGoogleLimits(models: any[]) {
-    return models.map((m: any) => {
+function enrichGoogleLimits(models: ModelEntry[]): ModelEntry[] {
+    return models.map((m) => {
         // If limits are already populated, keep them
         if (m.limits.RPM !== '' && m.limits.RPD !== '') return m;
 
@@ -336,7 +345,7 @@ ${rawExtraction}`;
 
         // ── Step 6.5: Enrich Google AI Studio limits (fallback for missing docs) ──
         const googleIndex = providers.findIndex(
-            (p: any) => p.name?.toLowerCase().includes('google') || p.id === 'google-ai-studio'
+            (p) => p.name?.toLowerCase().includes('google')
         );
         if (googleIndex !== -1) {
             console.log('[Cron] Enriching Google AI Studio models with known free tier limits...');
@@ -347,7 +356,7 @@ ${rawExtraction}`;
         const openRouterFreeModels = await fetchOpenRouterFreeModels();
         if (openRouterFreeModels.length > 0) {
             const orIndex = providers.findIndex(
-                (p: any) => p.name?.toLowerCase().includes('openrouter') || p.id === 'openrouter'
+                (p) => p.name?.toLowerCase().includes('openrouter')
             );
             if (orIndex !== -1) {
                 console.log(`[Cron] Replacing OpenRouter models with ${openRouterFreeModels.length} :free models from API.`);
@@ -406,8 +415,9 @@ ${rawExtraction}`;
             openRouterFreeModels: openRouterFreeModels.length,
         });
 
-    } catch (error: any) {
+    } catch (error) {
         console.error('[Cron] Error:', error);
-        return NextResponse.json({ success: false, error: error.message }, { status: 500 });
+        const message = error instanceof Error ? error.message : String(error);
+        return NextResponse.json({ success: false, error: message }, { status: 500 });
     }
 }
