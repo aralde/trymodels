@@ -8,7 +8,6 @@ import {
   flexRender,
   getCoreRowModel,
   getFilteredRowModel,
-  getPaginationRowModel,
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table"
@@ -311,9 +310,7 @@ export const columns: ColumnDef<ModelRow>[] = [
 
 ]
 
-import { ChevronDown, ChevronRight } from "lucide-react"
-
-export function ProvidersTable({ data, renderedContent }: { data: Provider[], renderedContent?: string }) {
+export function ProvidersTable({ data }: { data: Provider[], renderedContent?: string }) {
   const [sorting, setSorting] = React.useState<SortingState>([])
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
     []
@@ -324,7 +321,7 @@ export function ProvidersTable({ data, renderedContent }: { data: Provider[], re
   // Transform Provider[] -> ModelRow[]
   const flattenedData = React.useMemo(() => {
     const rows: ModelRow[] = [];
-    data.forEach((provider, pIndex) => {
+    data.forEach((provider) => {
       // Create a composite ID if provider.id is missing
       const providerId = provider.id || provider.name.toLowerCase().replace(/[^a-z0-9]/g, '-');
       
