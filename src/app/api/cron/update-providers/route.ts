@@ -218,8 +218,8 @@ export async function GET(request: Request) {
     }
 
     const { GITHUB_TOKEN } = process.env;
-    const REPO_OWNER = 'arieldeibe';
-    const REPO_NAME = 'free-llm-curate-list';
+    const REPO_OWNER = 'aralde';
+    const REPO_NAME = 'trymodels';
     const FILE_PATH = 'src/data/providers.json';
 
     if (!GITHUB_TOKEN) {

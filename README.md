@@ -51,7 +51,7 @@ console.log(`Found ${reasoningModels.length} reasoning-capable models!`);
 
 This project is built for the global developer community. Whether you want to add a new provider or improve the crawler logic, your contribution is what makes this project thrive.
 
-1. **Suggest a Model**: Found a new free tier? [Open an issue](https://github.com/arieldeibe/trymodels/issues).
+1. **Suggest a Model**: Found a new free tier? [Open an issue](https://github.com/aralde/trymodels/issues).
 2. **Build the Core**: Fork, branch, and PR. Let's make the best AI directory together.
 3. **Star the Repo**: If this tool helped you, show some love! ⭐
 
@@ -59,7 +59,7 @@ This project is built for the global developer community. Whether you want to ad
 
 ### 💻 Local Setup (For Developers)
 
-1. **Clone**: `git clone https://github.com/arieldeibe/trymodels.git`
+1. **Clone**: `git clone https://github.com/aralde/trymodels.git`
 2. **Install**: `npm install`
 3. **Env**: `cp .env.example .env`
 4. **Dev**: `npm run dev`
