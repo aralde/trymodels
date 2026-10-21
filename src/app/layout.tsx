@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "TryModels | Catalog of Free AI Models",
     description: "A community-curated list of free and trial LLM API providers.",
     images: ["/banner.png"],
-    creator: "@arieldeibe",
+    creator: "@aralde",
   },
   robots: {
     index: true,
