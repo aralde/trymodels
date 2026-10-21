@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "openai trial", "claude free tier", "developers", "artificial intelligence", 
     "trymodels", "llm directory", "free ai resources"
   ],
-  authors: [{ name: "Ariel Deibe" }],
+  authors: [{ name: "Aralde" }],
   icons: {
     icon: "/logo.png",
     apple: "/logo.png",

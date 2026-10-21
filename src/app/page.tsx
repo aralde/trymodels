@@ -65,7 +65,7 @@ export default function Home() {
           </Dialog>
           
           <a
-            href="https://github.com/arieldeibe/free-llm-curate-list"
+            href="https://github.com/aralde/trymodels"
             target="_blank"
             rel="noopener noreferrer"
           >
