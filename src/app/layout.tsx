@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "openai trial", "claude free tier", "developers", "artificial intelligence", 
     "trymodels", "llm directory", "free ai resources"
   ],
-  authors: [{ name: "Ariel Deibe" }],
+  authors: [{ name: "Aralde" }],
   icons: {
     icon: "/logo.png",
     apple: "/logo.png",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "TryModels | Catalog of Free AI Models",
     description: "A community-curated list of free and trial LLM API providers.",
     images: ["/banner.png"],
-    creator: "@arieldeibe",
+    creator: "@aralde",
   },
   robots: {
     index: true,
